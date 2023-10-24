@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Range Input Example</title>
+    <link rel="stylesheet" href="secondTask.css" />
+  </head>
+  <body>
+    <div id="next-btn-dev-nextSlide">
+      <but id="pre-btn" onclick="moveSlide('back')">Previous</but>
+      <button id="next-btn" type="button">Next</button>
+    </div>
+
+    <script>
+  const attributeColors = {
+  'folder_1': 'green',
+  'folder_2': 'blue',
+  'folder_3': 'yellow',
+  'folder_4': 'red',
+  
+};
+
+const groupedElements = {};
+
+for (const prefix in attributeColors) {
+  const elements = document.querySelectorAll(`input[data-q^="${prefix}"]`);
+  console.log(elements, ' elements');
+  groupedElements[prefix] = elements;
+}
+console.log(groupedElements, ' groupedElements');
+
+for (const prefix in groupedElements) {
+  const elements = groupedElements[prefix];
+
+  console.log(elements, ' grouped');
+
+  if (elements.length > 0) {
+    const newDiv = document.createElement('div');
+    newDiv.className = 'add-about fields-container row';
+    newDiv.style.backgroundColor = attributeColors[prefix]; 
+
+    elements.forEach(item => {
+      const parentMenuFieldContainer = item.closest('.menu-field-wrap');
+      if (parentMenuFieldContainer) {
+        newDiv.appendChild(parentMenuFieldContainer);
+      }
+    });
+
+    const targetContainer = document.querySelector('#_builder-form .fields-container');
+    targetContainer.appendChild(newDiv);
+  }
+}
+
+
+//       now I'm doing same functionality using chunks
+function myFn(params, chunks) {
+    const res = []
+    while (myArray.length) {
+        res.push(myArray.slice(0,chunks))
+        myArray = myArray.slice(chunks)
+    }
+    return res;
+}
+let myArray = [1,2,3,4,5,6,7,8,9,0]
+console.log(myFn(myArray, 5))
+    </script>
+  </body>
+</html>
