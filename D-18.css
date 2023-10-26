@@ -39,13 +39,16 @@
   i.n-base-icon.n-base-suffix__arrow {
   color: var(--black) !important;
 }
-#location-dashboard
-  .n-base-selection.n-base-selection--selected
-  .hl-card-header
-  .n-base-selection-label {
-  box-shadow: var(--selection-label-box-shadow) !important;
-  color: var(--selection-label-color) !important;
+#location-dashboard .hl-card-header .n-base-selection-label {
+    box-shadow: var(--selection-label-box-shadow) !important;
+    background: var(--selection-label-color) !important;
 }
 #app .hl_header.w100 .container-fluid div#mobileresphambeg {
   display: none !important;
+}
+
+
+#location-dashboard  .hl-card-header .n-base-selection-label {
+    box-shadow: var(--selection-label-box-shadow) !important;
+    background: var(--selection-label-color) !important;
 }
