@@ -13,7 +13,7 @@
   --red: red;
   --box-background: linear-gradient(135deg, #2d3748, #2d3748);
   --box-shadow-box: rgb(0 0 0 / 16%) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
-  --selection-label-box-shadow: inset 1px 4px 2px -3px rgba(0,0,0,.7), inset -1px -3px 3px -2px hsla(0,0%,100%,.2),
+  --selection-label-box-shadow: inset 2px 6px 5px -6px rgba(0.7, 0.7, 0.7, 0.7),
     inset -8px 4px 0px -15px hsla(0.7, 0%, 100%, 0.2) !important;
   --selection-label-color: #c0c0c0;
   --text-color:#ffffff !important;
@@ -21,7 +21,7 @@
 
 * {
   transition: 0.5s;
-  color:white !important
+  
 }
 
 #location-dashboard
@@ -39,7 +39,7 @@
   .n-base-clear
   .n-base-clear__placeholder
   i.n-base-icon.n-base-suffix__arrow {
-  color: var(--black) !important;
+  color: var(--text-color) !important;
 }
 #location-dashboard .hl-card-header .n-base-selection-label {
     .custom-element {
@@ -63,7 +63,7 @@
   color:white;
 }
 
-text {
+#location-dashboard .w-full.h-full  .hl-card-content text {
 fill:var(--text-color) !important
      
      }
@@ -72,3 +72,8 @@ fill:var(--text-color) !important
   color:var(--text-color) !important;
 }
 
+
+
+#location-dashboard  .hl-card-header .n-base-selection-label  .n-base-selection-overlay__wrapper{
+  color: var(--text-color) !important;
+}
