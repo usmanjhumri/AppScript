@@ -23,9 +23,6 @@
   .w-full.h-full.flex.flex-col.dashboard-widget-type-custom.dashboard-widget-module-custom.hl-card {
   border-radius: 12px;
   background: var(--box-background);
-  margin-bottom: 10px;
-  width: 100%;
-  padding: 20px;
   box-shadow: var(--box-shadow-box);
 }
 
