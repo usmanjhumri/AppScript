@@ -1,0 +1,19 @@
+:root {
+    --navbackground:
+    rgb(164 181 224);
+      --bodyback: #ffffff !important;
+    --side-n-headback: black;
+    --black: black !important;
+    --white: black !important;
+    --themePrimary:  #0f335c;
+    --themeSecondary:  #fff4e4;
+    --nav-a-hover: #e2e2e1 ;
+    --transparent: transparent;
+    --green: #37ca37;
+    --yellow: #ffbc00;
+    --red: red;
+  }
+  
+  * {
+    transition: 0.5s;
+  }
