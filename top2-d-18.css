@@ -51,12 +51,12 @@ span.search-shortcut {
 
 .card {
   /* box-shadow: 12px 12px 16px 0 rgb(0 0 0 / 25%), -8px -8px 12px 0 rgb(255 255 255 / 2%); */
-  border-radius: 8px;
-  background: #f0f0f3;
-  margin-bottom: 0px;
   /* background: linear-gradient(90deg, #e3ffe7 0%, #d9e7ff 100%); */
   /* box-shadow: inset -10px -10px 10px #a29b92, inset 10px 10px 10px #babac020; */
   /* background: transparent; */
+  border-radius: 8px;
+  background: #f0f0f3;
+  margin-bottom: 0px;
   width: 100% !important;
   box-shadow: -10px -10px 30px #fff,
   10px 10px 30px #aeaec040,
