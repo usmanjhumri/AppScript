@@ -237,15 +237,19 @@ div#location-switcher-sidbar-v2 i{
   display: none !important;
 }
 path[d="M168 27.75A83.25 83.25 0 1 1 167.9917 27.75M168 40.75A70.25 70.25 0 1 0 168.007 40.75Z"][fill="#E6EBF8"] {
-  fill: var(--black) !important;
-    box-shadow: 0.3rem 0.3rem 0.6rem var(--greyLight-2), -0.2rem -0.2rem 0.5rem var(--white1);
+  fill: #fb1650 !important;
 }
 #location-dashboard .hl-card-header .n-base-selection-label {
-  box-shadow: 0.3rem 0.3rem 0.6rem var(--greyLight-2), -0.2rem -0.2rem 0.5rem var(--white1) !important;
+  box-shadow: inset 2.3px 3.3px 1.6px var(--greyLight-3),inset 3.8px 2.8px 2.5rem var(--white1) !important;
   background: var(--bg-dashboard) !important;
 }
 
 
 #location-dashboard .font-sans.hl-wrapper-container.bg-gray-50.h-auto.min-h-full.location-dashboard-wrapper.flex.flex-col {
     background:var(--bg-dashboard) !important;
+}
+
+
+.hl-card-header .flex.flex-1.justify-end.items-center.space-x-2.flex-nowrap.max-w-full {
+    gap:12px !important;
 }
