@@ -1,5 +1,5 @@
 :root {
-  --navbackground: rgb(164 181 224);
+  --navbackground: #2d3748;
   --bodyback: #ffffff !important;
   --side-n-headback: black;
   --black: black !important;
@@ -8,19 +8,20 @@
   --themeSecondary: #fff4e4;
   --nav-a-hover: #e2e2e1;
   --transparent: transparent;
-  --box-background: #2d3748;
+  --box-background: #f0f0f3;
   --box-shadow-box: rgb(0 0 0 / 16%) 0px 3px 6px,
     rgba(0, 0, 0, 0.23) 0px 3px 6px;
   --selection-label-box-shadow: inset 2px 6px 5px -6px rgba(0.7, 0.7, 0.7, 0.7),
     inset -8px 4px 0px -15px hsla(0.7, 0%, 100%, 0.2) !important;
   --selection-label-color: #c0c0c0;
   --text-color: #ffffff !important;
-   --green: #37ca37;
+  --green: #37ca37;
   --yellow: #ffbc00;
   --red: red;
 }
 #location-dashboard
-  .w-full.h-full.flex.flex-col.dashboard-widget-type-custom.dashboard-widget-module-custom.hl-card .hl-card-header {
+  .w-full.h-full.flex.flex-col.dashboard-widget-type-custom.dashboard-widget-module-custom.hl-card
+  .hl-card-header {
   border-radius: 12px;
   background: var(--box-background);
   box-shadow: var(--box-shadow-box);
@@ -46,7 +47,7 @@
   display: none !important;
 }
 #app .hl_header {
-  background: var(--box-background) !important;
+  background: var(--navbackground) !important;
 }
 #location-dashboard .hl-card-header .n-base-selection-label {
   box-shadow: var(--text-color) !important;
@@ -81,7 +82,6 @@
   color: var(--text-color) !important;
 }
 
-
 #location-dashboard .hl-card-content p.text-3xl.font-medium.text-gray-900 {
   color: var(--text-color) !important;
 }
@@ -92,23 +92,58 @@
 text[transform="translate(565.4 38.76)"] {
   fill: var(--text-color) !important;
 }
-text[transform="translate(37.4 46.2)"]{
-fill: var(--text-color) !important;
-}
-text[transform="translate(677.6 44.76)"]{
+text[transform="translate(37.4 46.2)"] {
   fill: var(--text-color) !important;
 }
-text[transform="translate(486.2 46.2)"]{
+text[transform="translate(677.6 44.76)"] {
+  fill: var(--text-color) !important;
+}
+text[transform="translate(486.2 46.2)"] {
   fill: var(--text-color) !important;
 }
 
 #location-dashboard .hl-card-content .hl-text-sm-regular {
   color: var(--text-color) !important;
 }
- path[fill="rgb(83,177,253)"] {
-    fill: var(--black) !important;
-  }
+path[fill="rgb(83,177,253)"][d="M168.5 40.75A6.5 6.5 0 1 1 168.5 27.75A83.25 83.25 0 0 1 168.5 27.75A6.5 6.5 0 1 1 168.5 40.75A70.25 70.25 0 0 0 168.5 40.75"] {
+  fill: var(--black) !important;
+}
 
- path[d="M168.5 27.75A83.25 83.25 0 1 1 168.4917 27.75M168.5 40.75A70.25 70.25 0 1 0 168.507 40.75Z"][fill="#E6EBF8"]{
-   fill:var(--yellow) !important;
- }
+path[d="M168.5 27.75A83.25 83.25 0 1 1 168.4917 27.75M168.5 40.75A70.25 70.25 0 1 0 168.507 40.75Z"][fill="#E6EBF8"] {
+  fill: var(--yellow) !important;
+}
+path[fill="rgb(83,177,253)"][d="M168.5 40.75A6.5 6.5 0 1 1 168.5 27.75A83.25 83.25 0 0 1 168.5 27.75A6.5 6.5 0 1 1 168.5 40.75A70.25 70.25 0 0 0 168.5 40.75"]:hover {
+  fill: var(--black) !important;
+}
+
+.flex.flex-row.justify-start.items-center.topmenu-nav > * {
+  color: white !important;
+}
+
+header.hl_header.w100
+  .flex.flex-row.justify-start.items-center.topmenu-nav
+  > * {
+  color: white !important;
+}
+
+
+.flex.flex-col.overflow-y-auto.overflow-x-hidden.w-full.hl_nav-header::-webkit-scrollbar {
+    width: 18px;
+}
+
+.flex.flex-col.overflow-y-auto.overflow-x-hidden.w-full.hl_nav-header::-webkit-scrollbar-thumb {
+    background: #666;
+    border-radius: 20px;
+}
+
+.flex.flex-col.overflow-y-auto.overflow-x-hidden.w-full.hl_nav-header::-webkit-scrollbar-track {
+    background: #ddd;
+    border-radius: 20px;
+}
+
+#location-dashboard
+  .w-full.h-full.flex.flex-col.dashboard-widget-type-custom.dashboard-widget-module-custom.hl-card
+  .hl-card-header .text-gray-900.hl-text-md-medium {
+    color:var(--black) !important;
+    font-weight:700 !important;
+  }
