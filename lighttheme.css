@@ -208,12 +208,10 @@ span {
 .sidebar-v2-location .w-full .hl_settings--body {
     background-color: var(--transparent) !important
 }
-nav i {
+nav i,div#location-switcher-sidbar-v2 i {
       color:var(--black) !important;
 }
-div#location-switcher-sidbar-v2 i{
-    color:var(--black) !important; 
-}
+
 
 #location-dashboard
   .w-full.h-full.flex.flex-col.dashboard-widget-type-custom.dashboard-widget-module-custom.hl-card {
@@ -249,6 +247,8 @@ path[d="M168 27.75A83.25 83.25 0 1 1 167.9917 27.75M168 40.75A70.25 70.25 0 1 0 
     background:var(--bg-dashboard) !important;
 }
 
+a#sb_divider-1 {
+}
 
 .hl-card-header .flex.flex-1.justify-end.items-center.space-x-2.flex-nowrap.max-w-full {
     gap:12px !important;
