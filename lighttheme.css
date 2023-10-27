@@ -211,6 +211,11 @@ span {
 nav i,div#location-switcher-sidbar-v2 i {
       color:var(--black) !important;
 }
+div#location-switcher-sidbar-v2 i{
+       background: var(--bg-dashboard) !important;
+    box-shadow: .3rem .3rem .6rem var(--greyLight-2), -0.2rem -0.2rem .5rem var(--white1);
+    padding:0px 5px !important;
+}
 
 
 #location-dashboard
@@ -247,8 +252,6 @@ path[d="M168 27.75A83.25 83.25 0 1 1 167.9917 27.75M168 40.75A70.25 70.25 0 1 0 
     background:var(--bg-dashboard) !important;
 }
 
-a#sb_divider-1 {
-}
 
 .hl-card-header .flex.flex-1.justify-end.items-center.space-x-2.flex-nowrap.max-w-full {
     gap:12px !important;
