@@ -256,3 +256,9 @@ path[d="M168 27.75A83.25 83.25 0 1 1 167.9917 27.75M168 40.75A70.25 70.25 0 1 0 
 .hl-card-header .flex.flex-1.justify-end.items-center.space-x-2.flex-nowrap.max-w-full {
     gap:12px !important;
 }
+
+
+
+:is(.crm-opportunities-status, .crm-opportunities-value) .echarts.chart path:is(:nth-child(1), :nth-child(4), :nth-child(6), :nth-child(21)) {
+    fill: #fb1650 !important;
+}
