@@ -1,0 +1,189 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&family=Rubik:wght@300;400;500;600;700&display=swap');
+
+
+:root {
+  --navbackground:
+    rgb(164 181 224);
+  --bodyback:
+    linear-gradient(to right, #ece9e6, #ffffff) !important;
+  --side-n-headback:
+    linear-gradient(to right, #d4d1d1, #dbdbdb, #eaeaea) !important;
+  --black: black !important;
+  --white: black !important;
+  --themePrimary: #0f335c;
+  --themeSecondary: #fff4e4;
+  --nav-a-hover: #e2e2e1;
+  --transparent: transparent;
+  --green: #37ca37;
+  --yellow: #ffbc00;
+  --red: red;
+}
+
+
+
+body {
+  background: var(--bodyback);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y: center;
+  /*font-family: 'Aldrich', sans-serif !important;*/
+  /* font-family: 'Comfortaa', cursive !important;*/
+  font-family: 'Rubik', sans-serif;
+}
+
+/* shadow of sidebar*/
+#sidebar-v2 {
+  background: var(--side-n-headback) !important;
+  backdrop-filter: blur(31px) !important;
+  -webkit-backdrop-filter: blur(4px) !important;
+  /* border-radius: 25px 0px 25px 0px; */
+  box-shadow: 5px 5px 15px #bebebe, 0px 0px 0px #ffffff;
+}
+
+span.search-placeholder,
+span.search-shortcut {
+  color: white !important;
+}
+
+span.search-shortcut {
+  background: #dd6a62 !important;
+}
+
+
+
+
+[class*="hl_nav"] a {
+  /* list-style: none !important; */
+  padding: 40px 0 !important;
+  width: 100% !important;
+}
+
+[class*="hl_nav"] a {
+  position: relative !important;
+  padding: 6px 20px !important;
+  width: 90% !important;
+  transform: translateY(-10px) skewX(-5deg);
+  border-bottom: 0px;
+  border-radius: 5px !important;
+  margin: auto;
+}
+
+[class*="hl_nav"] a.active {
+  background: #f44336 !important;
+  /* box-shadow: 0px -3px rgba(0, 0, 0, 0.2), 0px 3px rgba(0, 0, 0, 0.2) !important; */
+  background: url(https://images.unsplash.com/photo-1521193089946-7aa29d1fe776?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80);
+  box-shadow: 10px 10px 42px -6px rgb(0 0 0 / 51%) !important;
+  -webkit-box-shadow: 10px 10px 12px -6px rgb(0 0 0 / 51%) !important;
+  -moz-box-shadow: 10px 10px 42px -6px rgb(0 0 0 / 51%);
+}
+
+
+[class*="hl_nav"] a.active span {
+  color: white !important;
+}
+
+[class*="hl_nav"] a.active img {
+
+  border-radius: 5px;
+}
+
+[class*="hl_nav"] a span {
+  text-decoration: none !important;
+  color: white !important;
+}
+
+
+
+div#globalSearchOpener,
+#quickActions {
+  background: var(--transparent) !important;
+
+  margin: 0px 10px 0 10px;
+  box-shadow: inset -4px -5px 10px var(--white)70, inset 4px 2px 5px #aeaec020;
+}
+
+
+.hl_nav-header nav a:first-child {
+  margin-top: 20px !important;
+}
+
+
+/*--------------------h2*/
+div#sidebar-v2 {
+  background: #caa5a5 !important;
+}
+
+
+
+.bottom-stats>li:nth-child(3) {
+  background: linear-gradient(123deg, rgba(190, 244, 214, 1) 0%, rgba(37, 221, 119, 1) 100%) !important;
+  color: black !important;
+  font-weight: bold !important;
+}
+
+.bottom-stats {
+  position: relative;
+  left: 0px !important;
+}
+
+.secondclass .card-header {
+  color: black !important;
+  background: #e1eefe !important;
+  flex-direction: column !important;
+  border-top-left-radius: 10px !important;
+  border-top-right-radius: 10px !important;
+  width: 90% !important;
+  transform: translate3d(20px, -20px, 10px) !important;
+  border-bottom-left-radius: 10px !important;
+  border-bottom-right-radius: 10px !important;
+  box-shadow: 0 4px 20px 0 rgb(0 0 0 / 14%), 0 7px 10px -5px rgb(255 152 0 / 40%) !important;
+}
+
+a#hl_header--help-icon {
+  background: #000000 !important;
+}
+
+[class*="hl_nav"] a span {
+  text-decoration: none !important;
+  color: black !important;
+}
+
+
+#globalSearchOpener svg {
+  fill: black !important;
+}
+
+.sidebar-v2-location #sidebar-v2 #globalSearchOpener .search-placeholder {
+  color: black !important;
+}
+
+[class*="hl_nav"] a.active {
+  background: #4acf80 !important;
+}
+
+.hl_nav-header nav a:hover {
+  background: linear-gradient(123deg, rgba(190, 244, 214, 1) 0%, rgba(37, 221, 119, 1) 100%) !important;
+}
+
+
+
+.sidebar-v2-location #sidebar-v2 #globalSearchOpener {
+  border: 1px solid black !important;
+}
+
+.sidebar-v2-location #sidebar-v2 .hl_nav-header nav a.divider {
+  display: none !important;
+}
+
+.sidebar-v2-location #sidebar-v2 .hl_nav-settings nav a:hover {
+  background: linear-gradient(123deg, rgba(190, 244, 214, 1) 0%, rgba(37, 221, 119, 1) 100%) !important;
+}
+
+.sidebar-v2-location #sidebar-v2 #backButtonv2 {
+  background: #4acf80 !important;
+}
+
+
+
+
