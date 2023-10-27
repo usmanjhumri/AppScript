@@ -275,18 +275,16 @@ path[d="M168 27.75A83.25 83.25 0 1 1 167.9917 27.75M168 40.75A70.25 70.25 0 1 0 
 }
 
 
-/* 
-
 .crm-opportunities-funnel #chart path:nth-child(13) {
-    fill: green !important;
+    fill: #c4181814 !important;
   }
   
   .crm-opportunities-funnel #chart path:nth-child(14) {
-    fill: blue !important;
+    fill: #fb1650 !important;
   }
   
   .crm-opportunities-funnel #chart path:nth-child(15) {
-    fill: red !important;
+    fill: #b29494 !important;
   }
   
   .crm-opportunities-funnel #chart path:nth-child(16) {
@@ -294,10 +292,29 @@ path[d="M168 27.75A83.25 83.25 0 1 1 167.9917 27.75M168 40.75A70.25 70.25 0 1 0 
   }
   
   .crm-opportunities-funnel #chart path:nth-child(17) {
-    fill: purple !important;
+    fill: #83a9df !important;
   }
   
   .crm-opportunities-funnel #chart path:nth-child(18) {
     fill: pink !important;
   }
-   */
+  
+.container-fluid .hl_header--controls #canny_logs-toggle, #hl_header--help-icon,#recent_activities-toggle,.avatar_img{
+    background: var(--bg-dashboard) !important;
+    box-shadow: .3rem .3rem .6rem var(--greyLight-2), -0.2rem -0.2rem .5rem var(--white1);
+  color:var(--black) !important;
+  }
+
+
+.hl_header--controls {
+  gap:10px;
+  
+}
+.sidebar-v2-location .hl_header .container-fluid{
+  padding:none !important;
+}
+
+#location-dashboard .n-config-provider div#__FPSC_ID_1_1698428418653 {
+   background: var(--bg-dashboard) !important;
+    box-shadow: .3rem .3rem .6rem var(--greyLight-2), -0.2rem -0.2rem .5rem var(--white1);
+}
