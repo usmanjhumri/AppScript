@@ -262,3 +262,30 @@ path[d="M168 27.75A83.25 83.25 0 1 1 167.9917 27.75M168 40.75A70.25 70.25 0 1 0 
 :is(.crm-opportunities-status, .crm-opportunities-value) .echarts.chart path:is(:nth-child(1), :nth-child(4), :nth-child(6), :nth-child(21)) {
     fill: #fb1650 !important;
 }
+
+/* 
+
+.crm-opportunities-funnel #chart path:nth-child(13) {
+    fill: green !important;
+  }
+  
+  .crm-opportunities-funnel #chart path:nth-child(14) {
+    fill: blue !important;
+  }
+  
+  .crm-opportunities-funnel #chart path:nth-child(15) {
+    fill: red !important;
+  }
+  
+  .crm-opportunities-funnel #chart path:nth-child(16) {
+    fill: orange !important;
+  }
+  
+  .crm-opportunities-funnel #chart path:nth-child(17) {
+    fill: purple !important;
+  }
+  
+  .crm-opportunities-funnel #chart path:nth-child(18) {
+    fill: pink !important;
+  }
+   */
