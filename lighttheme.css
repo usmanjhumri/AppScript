@@ -299,12 +299,14 @@ path[d="M168 27.75A83.25 83.25 0 1 1 167.9917 27.75M168 40.75A70.25 70.25 0 1 0 
     fill: pink !important;
   }
   
-.container-fluid .hl_header--controls #canny_logs-toggle, #hl_header--help-icon,#recent_activities-toggle,.avatar_img{
-    background: var(--bg-dashboard) !important;
-    box-shadow: .3rem .3rem .6rem var(--greyLight-2), -0.2rem -0.2rem .5rem var(--white1);
-  color:var(--black) !important;
+.container-fluid .hl_header--controls  #canny_logs-toggle,#hl_header--help-icon,#recent_activities-toggle,.avatar_img{
+     background: var(--bg-dashboard) !important; 
+     box-shadow: .3rem .3rem .6rem var(--greyLight-2), -0.2rem -0.2rem .5rem var(--white1); 
+    color:var(--black) !important;
   }
-
+.container-fluid .hl_header--controls i{
+  color:var(--black) !important;
+}
 
 .hl_header--controls {
   gap:10px;
