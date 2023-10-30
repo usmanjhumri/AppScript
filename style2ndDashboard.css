@@ -1,14 +1,14 @@
-
-@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&family=Rubik:wght@300;400;500;600;700&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&family=Rubik:wght@300;400;500;600;700&display=swap");
 
 :root {
-  --navbackground:
-    rgb(164 181 224);
-  --bodyback:
-    linear-gradient(to right, #ece9e6, #ffffff) !important;
-  --side-n-headback:
-    linear-gradient(to right, #d4d1d1, #dbdbdb, #eaeaea) !important;
+  --navbackground: rgb(164 181 224);
+  --bodyback: linear-gradient(to right, #ece9e6, #ffffff) !important;
+  --side-n-headback: linear-gradient(
+    to right,
+    #d4d1d1,
+    #dbdbdb,
+    #eaeaea
+  ) !important;
   --black: black !important;
   --white: black !important;
   --themePrimary: #0f335c;
@@ -20,8 +20,6 @@
   --red: red;
 }
 
-
-
 body {
   background: var(--bodyback);
   background-repeat: no-repeat;
@@ -29,7 +27,7 @@ body {
   background-position-y: center;
   /*font-family: 'Aldrich', sans-serif !important;*/
   /* font-family: 'Comfortaa', cursive !important;*/
-  font-family: 'Rubik', sans-serif;
+  font-family: "Rubik", sans-serif;
 }
 
 /* shadow of sidebar*/
@@ -49,9 +47,6 @@ span.search-shortcut {
 span.search-shortcut {
   background: #dd6a62 !important;
 }
-
-
-
 
 [class*="hl_nav"] a {
   /* list-style: none !important; */
@@ -78,13 +73,11 @@ span.search-shortcut {
   -moz-box-shadow: 10px 10px 42px -6px rgb(0 0 0 / 51%);
 }
 
-
 [class*="hl_nav"] a.active span {
   color: white !important;
 }
 
 [class*="hl_nav"] a.active img {
-
   border-radius: 5px;
 }
 
@@ -93,31 +86,29 @@ span.search-shortcut {
   color: white !important;
 }
 
-
-
 div#globalSearchOpener,
 #quickActions {
   background: var(--transparent) !important;
 
   margin: 0px 10px 0 10px;
-  box-shadow: inset -4px -5px 10px var(--white)70, inset 4px 2px 5px #aeaec020;
+  box-shadow: inset -4px -5px 10px var(--white) 70, inset 4px 2px 5px #aeaec020;
 }
-
 
 .hl_nav-header nav a:first-child {
   margin-top: 20px !important;
 }
-
 
 /*--------------------h2*/
 div#sidebar-v2 {
   background: #caa5a5 !important;
 }
 
-
-
-.bottom-stats>li:nth-child(3) {
-  background: linear-gradient(123deg, rgba(190, 244, 214, 1) 0%, rgba(37, 221, 119, 1) 100%) !important;
+.bottom-stats > li:nth-child(3) {
+  background: linear-gradient(
+    123deg,
+    rgba(190, 244, 214, 1) 0%,
+    rgba(37, 221, 119, 1) 100%
+  ) !important;
   color: black !important;
   font-weight: bold !important;
 }
@@ -137,7 +128,8 @@ div#sidebar-v2 {
   transform: translate3d(20px, -20px, 10px) !important;
   border-bottom-left-radius: 10px !important;
   border-bottom-right-radius: 10px !important;
-  box-shadow: 0 4px 20px 0 rgb(0 0 0 / 14%), 0 7px 10px -5px rgb(255 152 0 / 40%) !important;
+  box-shadow: 0 4px 20px 0 rgb(0 0 0 / 14%),
+    0 7px 10px -5px rgb(255 152 0 / 40%) !important;
 }
 
 a#hl_header--help-icon {
@@ -148,7 +140,6 @@ a#hl_header--help-icon {
   text-decoration: none !important;
   color: black !important;
 }
-
 
 #globalSearchOpener svg {
   fill: black !important;
@@ -163,10 +154,12 @@ a#hl_header--help-icon {
 }
 
 .hl_nav-header nav a:hover {
-  background: linear-gradient(123deg, rgba(190, 244, 214, 1) 0%, rgba(37, 221, 119, 1) 100%) !important;
+  background: linear-gradient(
+    123deg,
+    rgba(190, 244, 214, 1) 0%,
+    rgba(37, 221, 119, 1) 100%
+  ) !important;
 }
-
-
 
 .sidebar-v2-location #sidebar-v2 #globalSearchOpener {
   border: 1px solid black !important;
@@ -177,13 +170,19 @@ a#hl_header--help-icon {
 }
 
 .sidebar-v2-location #sidebar-v2 .hl_nav-settings nav a:hover {
-  background: linear-gradient(123deg, rgba(190, 244, 214, 1) 0%, rgba(37, 221, 119, 1) 100%) !important;
+  background: linear-gradient(
+    123deg,
+    rgba(190, 244, 214, 1) 0%,
+    rgba(37, 221, 119, 1) 100%
+  ) !important;
 }
 
 .sidebar-v2-location #sidebar-v2 #backButtonv2 {
   background: #4acf80 !important;
 }
 
-
-
-
+#app
+  .flex.v2-open.sidebar-v2-location.Q6sATpsoSLCPFf5ErtoF.flex.v2-open.sidebar-v2-location
+  section.w-full {
+  z-index: -1;
+}
