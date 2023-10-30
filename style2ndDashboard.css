@@ -84,7 +84,7 @@ span.search-shortcut {
 
 [class*="hl_nav"] a {
   position: relative !important;
-  padding: 9px 20px !important;
+  padding: 7px 20px !important;
   width: 90% !important;
   transform: translateY(-10px) skewX(-5deg);
   border-bottom: 0px;
@@ -117,7 +117,6 @@ div#globalSearchOpener,
 #quickActions {
   background: var(--transparent) !important;
 
-  margin: 0px 10px 0 10px;
   box-shadow: inset -4px -5px 10px var(--white) 70, inset 4px 2px 5px #aeaec020;
 }
 
@@ -167,7 +166,7 @@ a#hl_header--help-icon {
   display: none !important;
 }
 
-.sidebar-v2-location #sidebar-v2  nav a:hover {
+.sidebar-v2-location #sidebar-v2 nav a:hover {
   background: linear-gradient(
     123deg,
     rgba(190, 244, 214, 1) 0%,
@@ -270,14 +269,13 @@ text {
   padding: 0px 1rem;
 }
 
-:is(.crm-opportunities-status, .crm-opportunities-value,)
+:is(.crm-opportunities-status, .crm-opportunities-value, )
   .echarts.chart
   path:is(:nth-child(1), :nth-child(4), :nth-child(6), :nth-child(21)) {
   fill: #101828 !important;
-  
 }
-.crm-opportunities-conversion-rate .echarts path:nth-child(4){
-    fill: #101828 !important;
+.crm-opportunities-conversion-rate .echarts path:nth-child(4) {
+  fill: #101828 !important;
 }
 
 i.hl_collapse-button.fas.fa-chevron-circle-left.rounded-full {
