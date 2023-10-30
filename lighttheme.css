@@ -212,7 +212,7 @@ nav i,div#location-switcher-sidbar-v2 i {
       color:var(--black) !important;
 }
 div#location-switcher-sidbar-v2 i{
-       background: var(--bg-dashboard) !important;
+    background: var(--bg-dashboard) !important;
     box-shadow: .3rem .3rem .6rem var(--greyLight-2), -0.2rem -0.2rem .5rem var(--white1);
     padding:0px 5px !important;
 }
