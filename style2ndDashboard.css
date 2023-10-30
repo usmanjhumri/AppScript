@@ -18,12 +18,36 @@
   --green: #37ca37;
   --yellow: #ffbc00;
   --red: red;
-    --bg-dashboard-one:linear-gradient(123deg, rgba(37, 221, 119, 1)  0%, rgba(190, 244, 214, 1)  100%) !important;
-    --bg-dashboard-one-card: linear-gradient(123deg, rgba(190, 244, 214, 1) 0%, rgba(37, 221, 119, 1) 100%) !important;
-    --bg-dashboard-two:linear-gradient(123deg, rgba(237, 170, 11, 1)  0%, rgba(255, 214, 118, 1)  100%) !important;
-    --bg-dashboard-two-card:linear-gradient(123deg, rgba(255, 214, 118, 1) 0%, rgba(237, 170, 11, 1) 100%) !important;
-    --bg-dashboard-three: linear-gradient(90deg, rgba(171,224,144,1) 0%, rgba(0,212,255,1) 100%)  !important;
-    --bg-dashboard-three-card: linear-gradient(90deg, rgba(0,212,255,1)  0%, rgba(171,224,144,1) 100%)  !important;
+  --bg-dashboard-one: linear-gradient(
+    123deg,
+    rgba(37, 221, 119, 1) 0%,
+    rgba(190, 244, 214, 1) 100%
+  ) !important;
+  --bg-dashboard-one-card: linear-gradient(
+    123deg,
+    rgba(190, 244, 214, 1) 0%,
+    rgba(37, 221, 119, 1) 100%
+  ) !important;
+  --bg-dashboard-two: linear-gradient(
+    123deg,
+    rgba(237, 170, 11, 1) 0%,
+    rgba(255, 214, 118, 1) 100%
+  ) !important;
+  --bg-dashboard-two-card: linear-gradient(
+    123deg,
+    rgba(255, 214, 118, 1) 0%,
+    rgba(237, 170, 11, 1) 100%
+  ) !important;
+  --bg-dashboard-three: linear-gradient(
+    90deg,
+    rgba(171, 224, 144, 1) 0%,
+    rgba(0, 212, 255, 1) 100%
+  ) !important;
+  --bg-dashboard-three-card: linear-gradient(
+    90deg,
+    rgba(0, 212, 255, 1) 0%,
+    rgba(171, 224, 144, 1) 100%
+  ) !important;
 }
 
 body {
@@ -39,7 +63,7 @@ body {
   background: var(--side-n-headback) !important;
   backdrop-filter: blur(31px) !important;
   -webkit-backdrop-filter: blur(4px) !important;
- border:none !important;
+  border: none !important;
   box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px !important;
 }
 
@@ -60,7 +84,7 @@ span.search-shortcut {
 
 [class*="hl_nav"] a {
   position: relative !important;
-  padding: 6px 20px !important;
+  padding: 9px 20px !important;
   width: 90% !important;
   transform: translateY(-10px) skewX(-5deg);
   border-bottom: 0px;
@@ -103,9 +127,8 @@ div#globalSearchOpener,
 
 /*--------------------h2*/
 div#sidebar-v2 {
-  background: #FFFFFF !important;
+  background: #ffffff !important;
 }
-
 
 a#hl_header--help-icon {
   background: #000000 !important;
@@ -144,7 +167,7 @@ a#hl_header--help-icon {
   display: none !important;
 }
 
-.sidebar-v2-location #sidebar-v2 .hl_nav-settings nav a:hover {
+.sidebar-v2-location #sidebar-v2  nav a:hover {
   background: linear-gradient(
     123deg,
     rgba(190, 244, 214, 1) 0%,
@@ -152,128 +175,140 @@ a#hl_header--help-icon {
   ) !important;
 }
 
-
-
-#location-dashboard .crm-opportunities-status .hl-card-header{
-    background: var(--bg-dashboard-one) !important;
-    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px !important;
-    border-radius:10px;
-    border:none !important;
-}
-#location-dashboard .crm-opportunities-status .hl-card{
-    background: var(--bg-dashboard-one-card) !important;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    border-radius:10px;
-    padding:1rem !important;
-    border:none !important;
-}
-#location-dashboard .crm-opportunities-value .hl-card-header{
-    background: var(--bg-dashboard-two) !important;
-    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px !important;
-    border-radius:10px;
-    border:none !important;
-}
-#location-dashboard .crm-opportunities-value .hl-card{
-    background: var(--bg-dashboard-two-card) !important;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    border-radius:10px;
-    border:none !important;
-    padding:1rem !important;
-}
-
-#location-dashboard .group.h-full.crm-opportunities-conversion-rate .hl-card-header{
-  background:var(--bg-dashboard-three) !important;
+#location-dashboard .crm-opportunities-status .hl-card-header {
+  background: var(--bg-dashboard-one) !important;
   box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px !important;
-  border-radius:10px;
-  border:none !important;
+  border-radius: 10px;
+  border: none !important;
 }
-#location-dashboard .group.h-full.crm-opportunities-conversion-rate .hl-card{
-  background:var(--bg-dashboard-three-card) !important;
+#location-dashboard .crm-opportunities-status .hl-card {
+  background: var(--bg-dashboard-one-card) !important;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-  border-radius:10px;
-  border:none !important;
-  padding:1rem !important;
+  border-radius: 10px;
+  padding: 1rem !important;
+  border: none !important;
+}
+#location-dashboard .crm-opportunities-value .hl-card-header {
+  background: var(--bg-dashboard-two) !important;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px !important;
+  border-radius: 10px;
+  border: none !important;
+}
+#location-dashboard .crm-opportunities-value .hl-card {
+  background: var(--bg-dashboard-two-card) !important;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-radius: 10px;
+  border: none !important;
+  padding: 1rem !important;
+}
+
+#location-dashboard
+  .group.h-full.crm-opportunities-conversion-rate
+  .hl-card-header {
+  background: var(--bg-dashboard-three) !important;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px !important;
+  border-radius: 10px;
+  border: none !important;
+}
+#location-dashboard .group.h-full.crm-opportunities-conversion-rate .hl-card {
+  background: var(--bg-dashboard-three-card) !important;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-radius: 10px;
+  border: none !important;
+  padding: 1rem !important;
 }
 #app div#mobileresphambeg {
   display: none !important;
 }
 
- .text-gray-500.hl-text-xs-regular {
-   color:#000 !important;
-   font-weight:600 !important;
- }
-text{
-   color:#000 !important;
-   font-weight:600 !important;
+.text-gray-500.hl-text-xs-regular {
+  color: #000 !important;
+  font-weight: 600 !important;
+}
+text {
+  color: #000 !important;
+  font-weight: 600 !important;
 }
 
-#location-dashboard :is(
-  .group.h-full.crm-opportunities-funnel,
-  .group.h-full.crm-opportunities-stages-distribution,
-  .group.h-full.crm-locations-tasks,
-  .group.h-full.crm-conversations-manual-actions,
-  .group.h-full.automations-attribution-lead-sources,
-  .group.h-full.automations-reporting-google-analytics-count-report,
-  .group.h-full.automations-reporting-google-analytics-chart-report,
-  .group.h-full.automations-reporting-gmb-report,
-  .group.h-full.automations-reporting-facebook-ads-report,
-  .group.h-full.automations-reporting-google-ads-report
-) .hl-card-header {
+#location-dashboard
+  :is(
+    .group.h-full.crm-opportunities-funnel,
+    .group.h-full.crm-opportunities-stages-distribution,
+    .group.h-full.crm-locations-tasks,
+    .group.h-full.crm-conversations-manual-actions,
+    .group.h-full.automations-attribution-lead-sources,
+    .group.h-full.automations-reporting-google-analytics-count-report,
+    .group.h-full.automations-reporting-google-analytics-chart-report,
+    .group.h-full.automations-reporting-gmb-report,
+    .group.h-full.automations-reporting-facebook-ads-report,
+    .group.h-full.automations-reporting-google-ads-report
+  )
+  .hl-card-header {
   background: #ffe8e1 !important;
   box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px !important;
-  border-radius:10px;
-  border:none !important;
- 
+  border-radius: 10px;
+  border: none !important;
 }
 
-
-#location-dashboard :is(
-  .group.h-full.crm-opportunities-funnel,
-  .group.h-full.crm-opportunities-stages-distribution,
-  .group.h-full.crm-locations-tasks,
-  .group.h-full.crm-conversations-manual-actions,
-  .group.h-full.automations-attribution-lead-sources,
-  .group.h-full.automations-reporting-google-analytics-count-report,
-  .group.h-full.automations-reporting-google-analytics-chart-report,
-  .group.h-full.automations-reporting-gmb-report,
-  .group.h-full.automations-reporting-facebook-ads-report,
-  .group.h-full.automations-reporting-google-ads-report
-) .hl-card {
-   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-  border-radius:10px;
-  border:none !important;
-padding:0px 1rem;
+#location-dashboard
+  :is(
+    .group.h-full.crm-opportunities-funnel,
+    .group.h-full.crm-opportunities-stages-distribution,
+    .group.h-full.crm-locations-tasks,
+    .group.h-full.crm-conversations-manual-actions,
+    .group.h-full.automations-attribution-lead-sources,
+    .group.h-full.automations-reporting-google-analytics-count-report,
+    .group.h-full.automations-reporting-google-analytics-chart-report,
+    .group.h-full.automations-reporting-gmb-report,
+    .group.h-full.automations-reporting-facebook-ads-report,
+    .group.h-full.automations-reporting-google-ads-report
+  )
+  .hl-card {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-radius: 10px;
+  border: none !important;
+  padding: 0px 1rem;
 }
 
-:is(.crm-opportunities-status, .crm-opportunities-value) .echarts.chart path:is(:nth-child(1), :nth-child(4), :nth-child(6), :nth-child(21)) {
+:is(.crm-opportunities-status, .crm-opportunities-value,)
+  .echarts.chart
+  path:is(:nth-child(1), :nth-child(4), :nth-child(6), :nth-child(21)) {
+  fill: #101828 !important;
+  
+}
+.crm-opportunities-conversion-rate .echarts path:nth-child(4){
     fill: #101828 !important;
 }
 
-
 i.hl_collapse-button.fas.fa-chevron-circle-left.rounded-full {
-  color:#fff4e4 !important;
+  color: #fff4e4 !important;
 }
 
-div#app div#sidebar-v2 nav.flex-1.w-full img{
-  filter:invert(150%)
+div#app div#sidebar-v2 nav.flex-1.w-full img {
+  filter: invert(150%);
 }
 
-#app #sidebar-v2 nav i{
-  color:black !important;
+#app #sidebar-v2 nav i {
+  color: black !important;
 }
-#location-dashboard .n-config-provider .w-vw.z-10.top-0.py-2\.5.-mx-8.bg-gray-50.sticky {
-    background: linear-gradient(90deg, rgba(0,212,255,1)  0%, rgba(155,249,255,1) 100%) !important;
+#location-dashboard
+  .n-config-provider
+  .w-vw.z-10.top-0.py-2\.5.-mx-8.bg-gray-50.sticky {
+  background: linear-gradient(
+    90deg,
+    rgba(0, 212, 255, 1) 0%,
+    rgba(155, 249, 255, 1) 100%
+  ) !important;
   box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px !important;
 }
 
-
-
 #location-dashboard .hl-card-header .text-gray-900.hl-text-md-medium {
-  font-weight:700
+  font-weight: 700;
+}
+#location-dashboard .n-config-provider i {
+  color: black !important;
 }
 
-#app
-  .flex.v2-open.sidebar-v2-location.Q6sATpsoSLCPFf5ErtoF.flex.v2-open.sidebar-v2-location
-  section.w-full {
-  z-index: -1;
+div#sidebar-v2 {
+  z-index: 1 !important;
 }
