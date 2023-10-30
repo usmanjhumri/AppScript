@@ -18,6 +18,10 @@
   --green: #37ca37;
   --yellow: #ffbc00;
   --red: red;
+    --bg-dashboard-one:linear-gradient(123deg, rgba(37, 221, 119, 1)  0%, rgba(190, 244, 214, 1)  100%) !important;
+    --bg-dashboard-one-card: linear-gradient(123deg, rgba(190, 244, 214, 1) 0%, rgba(37, 221, 119, 1) 100%) !important;
+    --bg-dashboard-two:linear-gradient(123deg, rgba(237, 170, 11, 1)  0%, rgba(255, 214, 118, 1)  100%) !important;
+        --bg-dashboard-two-card:linear-gradient(123deg, rgba(255, 214, 118, 1) 0%, rgba(237, 170, 11, 1) 100%) !important;
 }
 
 body {
@@ -179,6 +183,33 @@ a#hl_header--help-icon {
 
 .sidebar-v2-location #sidebar-v2 #backButtonv2 {
   background: #4acf80 !important;
+}
+
+
+#location-dashboard .crm-opportunities-status .hl-card-header{
+    background: var(--bg-dashboard-one) !important;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    border-radius:10px;
+    border:none !important;
+}
+#location-dashboard .crm-opportunities-status .hl-card{
+    background: var(--bg-dashboard-one-card) !important;
+    box-shadow: 0.3rem 0.3rem 0.6rem var(--greyLight-2), -0.2rem -0.2rem 0.5rem var(--white1);
+    border-radius:10px;
+    padding:1rem !important;
+}
+#location-dashboard .crm-opportunities-value .hl-card-header{
+    background: var(--bg-dashboard-two) !important;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    border-radius:10px;
+    border:none !important;
+}
+#location-dashboard .crm-opportunities-value .hl-card{
+    background: var(--bg-dashboard-two-card) !important;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    border-radius:10px;
+    border:none !important;
+    padding:1rem !important;
 }
 
 #app
