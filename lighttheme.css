@@ -161,7 +161,7 @@ a#sb_divider-1:active {
 .sidebar-v2-location #sidebar-v2 #location-switcher-sidbar-v2 {
     background: var(--transparent) !important;
     box-shadow: inset -4px -5px 10px var(--text-color-full) 70, inset 4px 2px 5px rgba(174, 174, 192, .1254901961);
-    margin-bottom: 0px !important
+    margin-bottom: 8px !important
 }
 
 div#globalSearchOpener,
@@ -319,4 +319,23 @@ path[d="M168 27.75A83.25 83.25 0 1 1 167.9917 27.75M168 40.75A70.25 70.25 0 1 0 
 #location-dashboard .n-config-provider div#__FPSC_ID_1_1698428418653 {
    background: var(--bg-dashboard) !important;
     box-shadow: .3rem .3rem .6rem var(--greyLight-2), -0.2rem -0.2rem .5rem var(--white1);
+}
+div#sidebar-v2
+  .flex.flex-col.overflow-y-auto.overflow-x-hidden.w-full.hl_nav-header-without-footer
+  nav.flex-1.w-full
+  a.divider {
+  display: none !important;
+}
+
+
+.flex.flex-col.text-left.text-lg.menu-title.px-2.py-2.md\:px-3.md\:py-2.mt-2.font-medium {
+  color:var(--black) !important;
+}
+#backButtonv2 span{
+  color:#ffffff !important;
+}
+
+.sidebar-v2-location #sidebar-v2 #location-switcher-sidbar-v2 span.hl_text-overflow.justify-center.hl_switcher-loc-city.font-small {
+  color:#000 !important;
+  font-weight:600 !important;
 }

@@ -62,9 +62,7 @@ body {
 
 #sidebar-v2 {
   background: var(--side-n-headback) !important;
-  backdrop-filter: blur(31px) !important;
-  -webkit-backdrop-filter: blur(4px) !important;
-  /* border-radius: 25px 0px 25px 0px; */
+
   box-shadow: 5px 5px 15px #bebebe, 0px 0px 0px #ffffff;
 }
 
@@ -350,3 +348,6 @@ div#app div#sidebar-v2 nav.flex-1.w-full img {
 #location-dashboard .n-config-provider i {
   color: black !important;
 }
+
+
+/* ------------------------------------------------------------------- D2-DASHBOARD HAS BEEN COMPLETED --------------------------------------------------------------------- */
