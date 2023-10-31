@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&family=Rubik:wght@300;400;500;600;700&display=swap");
-
 :root {
   --navbackground: rgb(164 181 224);
   --bodyback: linear-gradient(to right, #ece9e6, #ffffff) !important;
@@ -49,7 +48,6 @@
     rgba(171, 224, 144, 1) 100%
   ) !important;
 }
-
 body {
   background: var(--bodyback);
   background-repeat: no-repeat;
@@ -59,30 +57,24 @@ body {
   /* font-family: 'Comfortaa', cursive !important;*/
   font-family: "Rubik", sans-serif;
 }
-
 #sidebar-v2 {
   background: var(--side-n-headback) !important;
 
   box-shadow: 5px 5px 15px #bebebe, 0px 0px 0px #ffffff;
 }
-
 span.search-shortcut {
   background: #dd6a62 !important;
 }
-
 #globalSearchOpener svg {
   fill: white !important;
 }
-
 * {
   transition: 0.5s;
 }
-
 [class*="hl_nav"] a {
   padding: 40px 0 !important;
   width: 100% !important;
 }
-
 [class*="hl_nav"] a {
   position: relative !important;
   padding: 6px 20px !important;
@@ -92,7 +84,6 @@ span.search-shortcut {
   border-radius: 5px !important;
   margin: auto;
 }
-
 [class*="hl_nav"] a.active {
   background: #f44336 !important;
   background: url(https://images.unsplash.com/photo-1521193089946-7aa29d1fe776?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80);
@@ -100,17 +91,14 @@ span.search-shortcut {
   -webkit-box-shadow: 10px 10px 12px -6px rgb(0 0 0 / 51%) !important;
   -moz-box-shadow: 10px 10px 42px -6px rgb(0 0 0 / 51%);
 }
-
 .sidebar-v2-location #sidebar-v2 .hl_nav-header-without-footer nav a.active,
 .sidebar-v2-location #sidebar-v2 .hl_nav-header-without-footer nav a:hover {
   background: #eff1f2c9;
 }
-
 .sidebar-v2-location #sidebar-v2 .hl_collapse-button {
   background: var(--themePrimary);
   color: var(--themeSecondary);
 }
-
 div#globalSearchOpener,
 #quickActions {
   background: var(--transparent) !important;
@@ -118,37 +106,29 @@ div#globalSearchOpener,
   margin: 0px 10px 0 10px;
   box-shadow: inset -4px -5px 10px var(--white) 70, inset 4px 2px 5px #aeaec020;
 }
-
 .hl_nav-header nav a:first-child {
   margin-top: 20px !important;
 }
-
 /*--------------------h2*/
 div#sidebar-v2 {
   background: #ffffff !important;
 }
-
 [class*="hl_nav"] a span {
   text-decoration: none !important;
   color: black !important;
 }
-
 span.hl_text-overflow.w-full.hl_switcher-loc-name.font-medium {
   color: black !important;
 }
-
 #globalSearchOpener svg {
   fill: black !important;
 }
-
 .sidebar-v2-location #sidebar-v2 #globalSearchOpener .search-placeholder {
   color: black !important;
 }
-
 [class*="hl_nav"] a.active {
   background: #4acf80 !important;
 }
-
 .hl_nav-header nav a:hover {
   background: linear-gradient(
     123deg,
@@ -156,15 +136,12 @@ span.hl_text-overflow.w-full.hl_switcher-loc-name.font-medium {
     rgba(37, 221, 119, 1) 100%
   ) !important;
 }
-
 .sidebar-v2-location #sidebar-v2 #globalSearchOpener {
   border: 1px solid black !important;
 }
-
 .sidebar-v2-location #sidebar-v2 .hl_nav-header nav a.divider {
   display: none !important;
 }
-
 .sidebar-v2-location #sidebar-v2 .hl_nav-settings nav a:hover {
   background: linear-gradient(
     123deg,
@@ -172,44 +149,34 @@ span.hl_text-overflow.w-full.hl_switcher-loc-name.font-medium {
     rgba(37, 221, 119, 1) 100%
   ) !important;
 }
-
 .sidebar-v2-location #sidebar-v2 #backButtonv2 {
   background: #4acf80 !important;
 }
-
 .sidebar-v2-location #sidebar-v2 .hl_nav-header-without-footer nav a {
   box-shadow: 0px 0px !important;
 }
-
 .sidebar-v2-agency #location-switcher-sidbar-v2 {
   border: none !important;
   box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px !important;
 }
-
 .sidebar-v2-agency #sidebar-v2 .hl_nav-settings nav a:hover {
   background: #4acf80 !important;
 }
-
 .sidebar-v2-agency #sidebar-v2 #backButtonv2 {
   background: #4acf80 !important;
 }
-
 .sidebar-v2-agency #sidebar-v2 .menu-title {
   color: black !important;
 }
-
 .sidebar-v2-agency #sidebar-v2 .hl_nav-header-without-footer nav a.active {
   margin-top: 11px !important;
 }
-
 .sidebar-v2-agency #sidebar-v2 .hl_nav-header-without-footer nav a:hover {
   background: #4acf80 !important;
 }
-
 .sidebar-v2-location #sidebar-v2 .hl_nav-header-without-footer nav a:hover {
   background: #4acf80 !important;
 }
-
 div#sidebar-v2
   .flex.flex-col.overflow-y-auto.overflow-x-hidden.w-full.hl_nav-header-without-footer
   nav.flex-1.w-full
@@ -242,7 +209,6 @@ div#sidebar-v2
   border: none !important;
   padding: 1rem !important;
 }
-
 #location-dashboard
   .group.h-full.crm-opportunities-conversion-rate
   .hl-card-header {
@@ -310,7 +276,6 @@ text {
   border: none !important;
   padding: 0px 1rem;
 }
-
 :is(.crm-opportunities-status, .crm-opportunities-value, )
   .echarts.chart
   path:is(:nth-child(1), :nth-child(4), :nth-child(6), :nth-child(21)) {
@@ -319,15 +284,12 @@ text {
 .crm-opportunities-conversion-rate .echarts path:nth-child(4) {
   fill: #101828 !important;
 }
-
 i.hl_collapse-button.fas.fa-chevron-circle-left.rounded-full {
   color: #fff4e4 !important;
 }
-
 div#app div#sidebar-v2 nav.flex-1.w-full img {
   filter: invert(150%);
 }
-
 #app #sidebar-v2 nav i {
   color: black !important;
 }
@@ -341,13 +303,11 @@ div#app div#sidebar-v2 nav.flex-1.w-full img {
   ) !important;
   box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px !important;
 }
-
 #location-dashboard .hl-card-header .text-gray-900.hl-text-md-medium {
   font-weight: 700;
 }
 #location-dashboard .n-config-provider i {
   color: black !important;
 }
-
 
 /* ------------------------------------------------------------------- D2-DASHBOARD HAS BEEN COMPLETED --------------------------------------------------------------------- */
