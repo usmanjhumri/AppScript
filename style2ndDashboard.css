@@ -55,38 +55,41 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-position-y: center;
+  /*font-family: 'Aldrich', sans-serif !important;*/
+  /* font-family: 'Comfortaa', cursive !important;*/
   font-family: "Rubik", sans-serif;
 }
 
-/* shadow of sidebar*/
 #sidebar-v2 {
   background: var(--side-n-headback) !important;
   backdrop-filter: blur(31px) !important;
   -webkit-backdrop-filter: blur(4px) !important;
-  border: none !important;
-  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px !important;
-}
-
-span.search-placeholder,
-span.search-shortcut {
-  color: white !important;
+  /* border-radius: 25px 0px 25px 0px; */
+  box-shadow: 5px 5px 15px #bebebe, 0px 0px 0px #ffffff;
 }
 
 span.search-shortcut {
   background: #dd6a62 !important;
 }
 
+#globalSearchOpener svg {
+  fill: white !important;
+}
+
+* {
+  transition: 0.5s;
+}
+
 [class*="hl_nav"] a {
-  /* list-style: none !important; */
   padding: 40px 0 !important;
   width: 100% !important;
 }
 
 [class*="hl_nav"] a {
   position: relative !important;
-  padding: 7px 20px !important;
+  padding: 6px 20px !important;
   width: 90% !important;
-  transform: translateY(-10px) skewX(-5deg);
+
   border-bottom: 0px;
   border-radius: 5px !important;
   margin: auto;
@@ -100,23 +103,21 @@ span.search-shortcut {
   -moz-box-shadow: 10px 10px 42px -6px rgb(0 0 0 / 51%);
 }
 
-[class*="hl_nav"] a.active span {
-  color: white !important;
+.sidebar-v2-location #sidebar-v2 .hl_nav-header-without-footer nav a.active,
+.sidebar-v2-location #sidebar-v2 .hl_nav-header-without-footer nav a:hover {
+  background: #eff1f2c9;
 }
 
-[class*="hl_nav"] a.active img {
-  border-radius: 5px;
-}
-
-[class*="hl_nav"] a span {
-  text-decoration: none !important;
-  color: white !important;
+.sidebar-v2-location #sidebar-v2 .hl_collapse-button {
+  background: var(--themePrimary);
+  color: var(--themeSecondary);
 }
 
 div#globalSearchOpener,
 #quickActions {
   background: var(--transparent) !important;
 
+  margin: 0px 10px 0 10px;
   box-shadow: inset -4px -5px 10px var(--white) 70, inset 4px 2px 5px #aeaec020;
 }
 
@@ -129,12 +130,12 @@ div#sidebar-v2 {
   background: #ffffff !important;
 }
 
-a#hl_header--help-icon {
-  background: #000000 !important;
-}
-
 [class*="hl_nav"] a span {
   text-decoration: none !important;
+  color: black !important;
+}
+
+span.hl_text-overflow.w-full.hl_switcher-loc-name.font-medium {
   color: black !important;
 }
 
@@ -166,7 +167,7 @@ a#hl_header--help-icon {
   display: none !important;
 }
 
-.sidebar-v2-location #sidebar-v2 nav a:hover {
+.sidebar-v2-location #sidebar-v2 .hl_nav-settings nav a:hover {
   background: linear-gradient(
     123deg,
     rgba(190, 244, 214, 1) 0%,
@@ -174,6 +175,49 @@ a#hl_header--help-icon {
   ) !important;
 }
 
+.sidebar-v2-location #sidebar-v2 #backButtonv2 {
+  background: #4acf80 !important;
+}
+
+.sidebar-v2-location #sidebar-v2 .hl_nav-header-without-footer nav a {
+  box-shadow: 0px 0px !important;
+}
+
+.sidebar-v2-agency #location-switcher-sidbar-v2 {
+  border: none !important;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px !important;
+}
+
+.sidebar-v2-agency #sidebar-v2 .hl_nav-settings nav a:hover {
+  background: #4acf80 !important;
+}
+
+.sidebar-v2-agency #sidebar-v2 #backButtonv2 {
+  background: #4acf80 !important;
+}
+
+.sidebar-v2-agency #sidebar-v2 .menu-title {
+  color: black !important;
+}
+
+.sidebar-v2-agency #sidebar-v2 .hl_nav-header-without-footer nav a.active {
+  margin-top: 11px !important;
+}
+
+.sidebar-v2-agency #sidebar-v2 .hl_nav-header-without-footer nav a:hover {
+  background: #4acf80 !important;
+}
+
+.sidebar-v2-location #sidebar-v2 .hl_nav-header-without-footer nav a:hover {
+  background: #4acf80 !important;
+}
+
+div#sidebar-v2
+  .flex.flex-col.overflow-y-auto.overflow-x-hidden.w-full.hl_nav-header-without-footer
+  nav.flex-1.w-full
+  a.divider {
+  display: none !important;
+}
 #location-dashboard .crm-opportunities-status .hl-card-header {
   background: var(--bg-dashboard-one) !important;
   box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px !important;
@@ -305,8 +349,4 @@ div#app div#sidebar-v2 nav.flex-1.w-full img {
 }
 #location-dashboard .n-config-provider i {
   color: black !important;
-}
-
-div#sidebar-v2 {
-  z-index: 1 !important;
 }
