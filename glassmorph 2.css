@@ -34,9 +34,11 @@
   ) !important;
 }
 
+
 * {
   transition: 0.5s;
 }
+
 
 a#sb_divider-1 p {
   line-height: 2px !important;
@@ -60,15 +62,14 @@ div#globalSearchOpener,
 .sidebar-v2-location
   #sidebar-v2
   #location-switcher-sidbar-v2
-  .hl_switcher-loc-name,
-i {
+  .hl_switcher-loc-name,i {
   color: black !important;
 }
 
 #sidebar-v2 {
   background: var(--side-n-headback) !important;
 
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px !important;
+box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px !important;
 }
 span.search-placeholder,
 span.search-shortcut {
@@ -171,17 +172,20 @@ i.hl_collapse-button.fas.fa-chevron-circle-left.rounded-full {
   .n-config-provider
   .w-vw.z-10.top-0.py-2\.5.-mx-8.bg-gray-50.sticky {
   background: linear-gradient(
-    90deg,
-    rgba(0, 212, 255, 1) 0%,
-    rgba(155, 249, 255, 1) 100%
-  ) !important;
+  45deg,
+  hsl(323deg 65% 88%) 0%,
+  hsl(222deg 30% 85%) 20%,
+  hsl(252deg 75% 92%) 40%,
+  hsl(300deg 100% 95%) 60%,
+  hsl(176deg 100% 95%) 80%,
+  hsl(177deg 100% 64%) 100%
+) !important;
   box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px !important;
-  margin-bottom: 1.5rem !important;
+ 
 }
 #location-dashboard .crm-opportunities-status .hl-card-header {
   background: var(--bg-dashboard-one) !important;
-  box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset,
-    rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset !important;
+  box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset !important;
   border-radius: 10px;
   border: none !important;
   width: 250px !important;
@@ -192,8 +196,7 @@ i.hl_collapse-button.fas.fa-chevron-circle-left.rounded-full {
 }
 #location-dashboard .crm-opportunities-value .hl-card-header {
   background: var(--bg-dashboard-two) !important;
-  box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset,
-    rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset !important;
+box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset !important;
   border-radius: 10px;
   border: none !important;
   width: 250px !important;
@@ -206,8 +209,7 @@ i.hl_collapse-button.fas.fa-chevron-circle-left.rounded-full {
   .group.h-full.crm-opportunities-conversion-rate
   .hl-card-header {
   background: var(--bg-dashboard-three) !important;
-  box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset,
-    rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset !important;
+  box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset !important;
   border-radius: 10px;
   border: none !important;
   width: 250px !important;
@@ -237,15 +239,15 @@ i.hl_collapse-button.fas.fa-chevron-circle-left.rounded-full {
 
 div#location-dashboard
   .font-sans.hl-wrapper-container.bg-gray-50.h-auto.min-h-full.location-dashboard-wrapper.flex.flex-col {
-  background: linear-gradient(
-    45deg,
-    hsl(323deg 46% 88%) 0%,
-    hsl(268deg 67% 95%) 20%,
-    hsl(280deg 79% 95%) 40%,
-    hsl(221deg 100% 93%) 60%,
-    hsl(185deg 96% 80%) 80%,
-    hsl(177deg 100% 50%) 100%
-  ) !important;
+  background:  linear-gradient(
+  45deg,
+  hsl(323deg 65% 88%) 0%,
+  hsl(222deg 30% 85%) 20%,
+  hsl(252deg 75% 92%) 40%,
+  hsl(300deg 100% 95%) 60%,
+  hsl(156deg 77% 97%) 80%,
+  hsl(158deg 76% 84%) 100%
+) !important;
 }
 #location-dashboard
   :is(
@@ -261,16 +263,16 @@ div#location-dashboard
     .group.h-full.automations-reporting-google-ads-report
   )
   .hl-card-header {
-  background: linear-gradient(
-    45deg,
-    hsl(323deg 62% 70%) 0%,
-    hsl(270deg 58% 79%) 20%,
-    hsl(216deg 39% 80%) 40%,
-    hsl(197deg 38% 79%) 60%,
-    hsl(184deg 73% 68%) 80%,
-    hsl(171deg 100% 50%) 100%
-  ) !important;
-
+  background:linear-gradient(
+  45deg,
+  hsl(323deg 62% 70%) 0%,
+  hsl(270deg 58% 79%) 20%,
+  hsl(216deg 39% 80%) 40%,
+  hsl(197deg 38% 79%) 60%,
+  hsl(184deg 73% 68%) 80%,
+  hsl(171deg 100% 50%) 100%
+) !important;
+  
   border-radius: 10px;
   border: none !important;
 }
@@ -297,13 +299,15 @@ div#location-dashboard
   display: none !important;
 }
 
-header.hl_header.w100 .hl_header--controls i {
-  color: black !important;
+header.hl_header.w100 
+.hl_header--controls i{
+  color:black !important;
 }
 #location-dashboard .hl-card-header .text-gray-900.hl-text-md-medium {
   font-weight: 700;
 }
 
-header.hl_header.w100 .hl_header--controls {
-  margin-right: 2rem;
+header.hl_header.w100 
+.hl_header--controls{
+  margin-right:2rem
 }
