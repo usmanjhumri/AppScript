@@ -42,37 +42,37 @@ btn.appendChild(button);
 
 
 
-function rangeSlide(value) {
-  document.getElementById('rangeValue').innerHTML = value;
-}
+// function rangeSlide(value) {
+//   document.getElementById('rangeValue').innerHTML = value;
+// }
 
-const slider = document.getElementById('electric_bill')
-const inputs = document.querySelector('[id="85w5nF28HCQZ8ew51rpU"]')
-if(inputs){
-    inputs.style.display = "none";
-}else{
-    inputs.style.display = "block";
+// const slider = document.getElementById('electric_bill')
+// const inputs = document.querySelector('[id="85w5nF28HCQZ8ew51rpU"]')
+// if(inputs){
+//     inputs.style.display = "none";
+// }else{
+//     inputs.style.display = "block";
 
-}
+// }
 
 
-function dispatchValue(){
-    inputs.value = slider.value
-    const InputEvent = new Event("input")
-    inputs.dispatchEvent(InputEvent)
-    console.log(InputEvent)
+// function dispatchValue(){
+//     inputs.value = slider.value
+//     const InputEvent = new Event("input")
+//     inputs.dispatchEvent(InputEvent)
+//     console.log(InputEvent)
     
-}
-slider.addEventListener("input", dispatchValue)
+// }
+// slider.addEventListener("input", dispatchValue)
 
-const elements = document.querySelectorAll('input[data-q ^= "A_"]')
-console.log(elements, ' ele founds');
+// const elements = document.querySelectorAll('input[data-q ^= "A_"]')
+// console.log(elements, ' ele founds');
 
-const divTag = document.createElement('div')
-elements.forEach(e => {
-  divTag.appendChild(e)
-})
-divTag.style.backgroundColor = "green"
+// const divTag = document.createElement('div')
+// elements.forEach(e => {
+//   divTag.appendChild(e)
+// })
+// divTag.style.backgroundColor = "green"
 
 
 // find location of URL

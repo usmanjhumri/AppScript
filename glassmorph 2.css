@@ -38,13 +38,6 @@
   transition: 0.5s;
 }
 
-/* body {
-  background: var(--bodyback);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position-y: center;
-}
- */
 a#sb_divider-1 p {
   line-height: 2px !important;
   font-size: 3px !important;
@@ -67,7 +60,8 @@ div#globalSearchOpener,
 .sidebar-v2-location
   #sidebar-v2
   #location-switcher-sidbar-v2
-  .hl_switcher-loc-name {
+  .hl_switcher-loc-name,
+i {
   color: black !important;
 }
 
@@ -279,4 +273,18 @@ div#location-dashboard
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   border-radius: 10px;
   border: none !important;
+}
+#app div#mobileresphambeg {
+  display: none !important;
+}
+
+header.hl_header.w100 .hl_header--controls i {
+  color: black !important;
+}
+#location-dashboard .hl-card-header .text-gray-900.hl-text-md-medium {
+  font-weight: 700;
+}
+
+header.hl_header.w100 .hl_header--controls {
+  margin-right: 2rem;
 }
