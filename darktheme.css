@@ -142,7 +142,7 @@ a#sb_divider-1:active {
 div#globalSearchOpener,
 #quickActions {
     margin: 0px 10px 0 10px;
-    background: #E4EBF5 !important;
+    background: #000000 !important;
     box-shadow: 0.3rem 0.3rem 0.6rem var(--greyLight-2), -0.2rem -0.2rem 0.5rem var(--white1);
 }
 
