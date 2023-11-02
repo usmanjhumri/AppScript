@@ -1,67 +1,47 @@
 :root {
-    --side-n-headback: #e4ebf5;
-    
-    --sideheadback: #272727;
-    --mobile-nav-back:
-    var(--back-gradient1);
-    --text-color-light: gray;
-    --text-color-full:
-    rgb(6 6 6) !important;
-    --black:
-    var(--text-color-full) !important;
-    --white: black !important;
-    --themePrimary: #0f335c !important;
-    --themeSecondary: #fff4e4 !important;
-    --nav-a-hover: #40403eba;
+    --side-n-headback: #333333;
+    --sideheadback: #111111;
+    --mobile-nav-back: #222222;
+    --text-color-light: #999999;
+    --text-color-full: #ffffff !important;
+    --black: #ffffff !important;
+    --white: #000000 !important;
+    --themePrimary: #1a4c81 !important;
+    --themeSecondary: #f2dcb0 !important;
+    --nav-a-hover: #333333ba;
     --transparent: transparent !important;
-    --green: #37ca37;
+    --green: #0caa0c;
     --yellow: #ffbc00;
-    --red: red;
-    --gray:
-    var(--text-color-full);
-    --light:
-    var(--text-color-full);
-    --dark:
-    var(--text-color-full)
-        --primary-light: #8abdff;
-    --primary: #6d5dfc;
-    --primary-dark: #5b0eeb;
-    --white1: #FFFFFF;
-    --greyLight-1: #E4EBF5;
-    --greyLight-2: #c8d0e7;
-    --greyLight-3: #bec8e4;
-    --greyDark: #9baacf;
-    --bg-dashboard: #e4ebf5;
-    --body-bg:#e4ebf5;
-    
+    --red: #ff0000;
+    --gray: #333333;
+    --light: #333333;
+    --dark: #333333;
+    --primary-light: #4285f5;
+    --primary: #3532e7;
+    --primary-dark: #2c0bdb;
+    --white1: #333333;
+    --greyLight-1: #2b3240;
+    --greyLight-2: #1f232f;
+    --greyLight-3: #1a1f2c;
+    --greyDark: #16223a;
+    --bg-dashboard: #1a1f2c;
+    --body-bg: #1a1f2c;
 }
-
 
 body {
     background-repeat: no-repeat;
     background-size: cover;
     background-position-y: center;
-    background: #E4EBF5;
+    background: #1a1f2c;
 }
-
-
 
 #sidebar-v2 {
     background: var(--side-n-headback) !important;
-    /* box-shadow: 12px 12px 16px 0 rgba(0, 0, 0, .25), -8px -8px 12px 0 rgba(255, 255, 255, .02); */
-    border-radius: 5px;
-    /* box-shadow: inset 2px 2px 5px #141414, inset -5px -5px 10px #212121; */
-    box-shadow: -5px -5px 20px #212121, 5px 5px 20px #141414;
-    height: 98vh;
-    margin: auto;
-    box-shadow: .8rem .8rem 1.4rem var(--greyLight-2), -0.2rem -0.2rem 1.8rem var(--white1);
+    box-shadow: -5px -5px 20px #111111, 5px 5px 20px #333333;
 }
 
 span.search-shortcut {
-    /* background: var(--text-color-full) !important; */
-    background: #E4EBF5 !important;
-   
-    box-shadow: 0.3rem 0.3rem 0.6rem var(--greyLight-2), -0.2rem -0.2rem 0.5rem var(--white1);
+    background: #1a1f2c !important;
 }
 
 
@@ -80,28 +60,23 @@ span.search-shortcut {
 
 [class*=hl_nav] a.active {
   
-    background: #e4ebf5 !important;
-   
+    background: #000000 !important;
+   color:#000000 !important;
     border-radius: 3px !important;
     box-shadow: .8rem .8rem 1.4rem var(--greyLight-2), -0.2rem -0.2rem 1.8rem var(--white1) !important;
 }
 [class*=hl_nav] a:hover {
     
     border-radius: 3px !important;
-    background: #e4ebf5 !important;
+    background: #000000 !important;
   
     border-radius: 3px !important;
     box-shadow: 0.8rem 0.8rem 1.4rem var(--greyLight-2), -0.2rem -0.2rem 1.8rem var(--white1) !important;
 }
-[class*=hl_nav] a.active img {
-    border-radius: 5px;
-    /* filter: invert(1); */
-}
-[class*=hl_nav] a img {
-    border-radius: 5px;
-    filter: invert(1);
-}
 
+div#app div#sidebar-v2 nav.flex-1.w-full img {
+  filter: invert(-100%);
+}
 
 a#sb_divider-1 {
     background: var(--transparent) !important
@@ -339,4 +314,5 @@ div#sidebar-v2
   color:#000 !important;
   font-weight:600 !important;
 }
+
 /* ------------------------------------------------------------------- LIGHT-THEME-DASHBOARD HAS BEEN COMPLETED --------------------------------------------------------------------- */
