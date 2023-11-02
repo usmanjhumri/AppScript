@@ -52,16 +52,32 @@ span.search-shortcut {
   fill: white !important;
 }
 
-.sidebar-v2-location #sidebar-v2 .hl_nav-header nav a.active,
-.sidebar-v2-location #sidebar-v2 .hl_nav-header nav a:hover,
-.sidebar-v2-location #sidebar-v2 .hl_nav-settings nav a.active,
-.sidebar-v2-location #sidebar-v2 .hl_nav-settings nav a:hover {
+ #sidebar-v2 .hl_nav-header nav a.active,
+ #sidebar-v2 .hl_nav-header nav a:hover,
+ #sidebar-v2 .hl_nav-settings nav a.active,
+ #sidebar-v2 .hl_nav-settings nav a:hover {
   border-radius: 16px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
 
   background: #fe6c64 !important;
 }
 
+.sidebar-v2-location #sidebar-v2 .hl_nav-header-without-footer nav a.active,
+.sidebar-v2-location #sidebar-v2 .hl_nav-header-without-footer nav a:hover
+{
+   border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+
+  background: #fe6c64 !important;
+}
+.sidebar-v2-location #sidebar-v2 .hl_nav-header-without-footer nav a.divider.active,
+.sidebar-v2-location #sidebar-v2 .hl_nav-header-without-footer nav a.divider:hover
+{
+   border-radius: 16px;
+  box-shadow: none !important;
+
+  background: none !important;
+}
 [class*="hl_nav"] a {
   list-style: none !important;
   padding: 40px 0 !important;
@@ -72,7 +88,7 @@ span.search-shortcut {
   position: relative !important;
   padding: 6px 20px !important;
   width: 90% !important;
-
+  
   border-bottom: 0px;
   border-radius: 5px !important;
   margin: auto;
@@ -85,6 +101,7 @@ span.search-shortcut {
   -webkit-box-shadow: 10px 10px 12px -6px rgb(0 0 0 / 51%) !important;
   -moz-box-shadow: 10px 10px 42px -6px rgb(0 0 0 / 51%);
 }
+
 
 .sidebar-v2-location #sidebar-v2 .hl_nav-header-without-footer nav a.active,
 .sidebar-v2-location #sidebar-v2 .hl_nav-header-without-footer nav a:hover {
@@ -135,7 +152,7 @@ div#sidebar-v2 {
 }
 
 .sidebar-v2-location #sidebar-v2 #backButtonv2 {
-  background: #f4f2f0;
+  background: #fe6c64;
   color: black !important;
 }
 
@@ -183,5 +200,5 @@ div#app div#sidebar-v2 nav.flex-1.w-full img {
 }
 
 #app #sidebar-v2 nav i {
-  color: #ffffff !important;
+  color: #FFFFFF !important;
 }
