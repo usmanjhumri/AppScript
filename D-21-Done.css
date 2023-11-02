@@ -19,12 +19,12 @@
   --green: #37ca37;
   --yellow: #ffbc00;
   --red: red;
-  --bg-dashboard-one:#6cc9ce !important;
-  --bg-dashboard-two:#fe6d65 !important;
-  --bg-dashboard-three:#ffd04e !important;
-  --bg-dashboard-one-card:red !important;
-  --bg-dashboard-two-card:red !important;
-  --bg-dashboard-three-card:red !important;
+  --bg-dashboard-one: #6cc9ce !important;
+  --bg-dashboard-two: #fe6d65 !important;
+  --bg-dashboard-three: #ffd04e !important;
+  --bg-dashboard-one-card: #e4e4e4 !important;
+  --bg-dashboard-two-card: #cccbd0 !important;
+  --bg-dashboard-three-card: #cdc3e1 !important;
 }
 
 * {
@@ -75,8 +75,6 @@ span.search-shortcut {
   background: #fe6c64 !important;
 }
 
-
-
 .sidebar-v2-location #sidebar-v2 .hl_nav-header-without-footer nav a.active,
 .sidebar-v2-location #sidebar-v2 .hl_nav-header-without-footer nav a:hover,
 .sidebar-v2-agency #sidebar-v2 .hl_nav-header-without-footer nav a.active,
@@ -86,10 +84,17 @@ span.search-shortcut {
   background: #fe6c64 !important;
 }
 
-.sidebar-v2-location #sidebar-v2 .hl_nav-header-without-footer nav a.divider.active,
-.sidebar-v2-location #sidebar-v2 .hl_nav-header-without-footer nav a.divider:hover
-{
-   border-radius: 16px;
+.sidebar-v2-location
+  #sidebar-v2
+  .hl_nav-header-without-footer
+  nav
+  a.divider.active,
+.sidebar-v2-location
+  #sidebar-v2
+  .hl_nav-header-without-footer
+  nav
+  a.divider:hover {
+  border-radius: 16px;
   box-shadow: none !important;
 
   background: none !important;
@@ -105,13 +110,11 @@ span.search-shortcut {
   position: relative !important;
   padding: 6px 20px !important;
   width: 90% !important;
-  
+
   border-bottom: 0px;
   border-radius: 5px !important;
   margin: auto;
 }
-
-
 
 [class*="hl_nav"] a.active {
   background: #f44336 !important;
@@ -120,8 +123,6 @@ span.search-shortcut {
   -webkit-box-shadow: 10px 10px 12px -6px rgb(0 0 0 / 51%) !important;
   -moz-box-shadow: 10px 10px 42px -6px rgb(0 0 0 / 51%);
 }
-
-
 
 .sidebar-v2-location #sidebar-v2 .hl_collapse-button {
   background: var(--themePrimary);
@@ -133,9 +134,9 @@ span.search-shortcut {
   box-shadow: inset -4px -5px 10px var(--white) 70, inset 4px 2px 5px #aeaec020;
   margin-bottom: 0px !important;
 }
-#location-switcher-sidbar-v2 svg{
-  color:black !important;
-  filter:invert(100%)
+#location-switcher-sidbar-v2 svg {
+  color: black !important;
+  filter: invert(100%);
 }
 div#globalSearchOpener,
 #quickActions {
@@ -218,13 +219,14 @@ div#app div#sidebar-v2 nav.flex-1.w-full img {
 }
 
 #app #sidebar-v2 nav i {
-  color: #FFFFFF !important;
+  color: #ffffff !important;
 }
-#app #sidebar-v2 nav a span{
-  color:#FFFFFF !important;
+#app #sidebar-v2 nav a span {
+  color: #ffffff !important;
 }
-#sidebar-v2 .flex.flex-col.text-left.text-lg.menu-title.px-2.py-2.md\:px-3.md\:py-2.mt-2.font-medium {
-  color:#FFFFFF !important;
+#sidebar-v2
+  .flex.flex-col.text-left.text-lg.menu-title.px-2.py-2.md\:px-3.md\:py-2.mt-2.font-medium {
+  color: #ffffff !important;
 }
 #app div#mobileresphambeg {
   display: none !important;
@@ -232,88 +234,90 @@ div#app div#sidebar-v2 nav.flex-1.w-full img {
 
 #location-dashboard .hl-card-header .text-gray-900.hl-text-md-medium {
   font-weight: 700 !important;
-  letter-spacing:1px !important;
-  word-spacing:2px !important;
-  text-transform:uppercase !important;
+  letter-spacing: 1px !important;
+  word-spacing: 2px !important;
+  text-transform: uppercase !important;
 }
-#location-dashboard .n-config-provider i, header.hl_header.w100 .hl_header--controls i { color: black !important; }
+#location-dashboard .n-config-provider i,
+header.hl_header.w100 .hl_header--controls i {
+  color: black !important;
+}
 
-.location-dashboard_header .hl-header-content .hl-title-container .title.hl-display-sm-medium {
+.location-dashboard_header
+  .hl-header-content
+  .hl-title-container
+  .title.hl-display-sm-medium {
   font-weight: 700 !important;
-  letter-spacing:1.5px !important;
-  text-transform:uppercase !important;
+  letter-spacing: 1.5px !important;
+  text-transform: uppercase !important;
 }
-
 
 .flex.mb-4.h-7.flex-row.md\:flex-col.lg\:flex-row.xl\:flex-row.items-start.justify-between.px-2 {
   margin-bottom: 10px !important;
 }
 
-
-
 #bookedAppointments__::-webkit-scrollbar {
-    width: 4px;
+  width: 4px;
 }
 
 #bookedAppointments__::-webkit-scrollbar-track {
-    background: #f1f1f1;
+  background: #f1f1f1;
 }
 
 #bookedAppointments__::-webkit-scrollbar-thumb {
-    background: #888;
-    border-radius: 50px;
+  background: #888;
+  border-radius: 50px;
 }
 
-
 ::-webkit-scrollbar {
-    width: 4px;
+  width: 4px;
 }
 
 ::-webkit-scrollbar-track {
-    background: #f1f1f1;
+  background: #f1f1f1;
 }
 
 ::-webkit-scrollbar-thumb {
-    background: #888;
-    border-radius: 50px;
+  background: #888;
+  border-radius: 50px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: #555;
+  background: #555;
 }
 
-
 #bookedAppointments__::-webkit-scrollbar-thumb:hover {
-    background: #555;
+  background: #555;
 }
 #location-dashboard .crm-opportunities-status .hl-card-header {
   background: var(--bg-dashboard-one) !important;
   box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px !important;
-  border-radius: 10px;
+  border-radius: 20px 3px 20px 21px;
   border: none !important;
   display: flex !important;
   align-items: center !important;
-  justify-content:center !important;
+  justify-content: center !important;
+  padding: 2rem !important;
 }
 #location-dashboard .crm-opportunities-value .hl-card-header {
   background: var(--bg-dashboard-two) !important;
   box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px !important;
-  border-radius: 10px;
+  border-radius: 24px 5px 25px 5px;
   border: none !important;
   display: flex !important;
   align-items: center !important;
-  justify-content:center !important;
+  justify-content: center !important;
+  padding: 2rem !important;
 }
-#location-dashboard
-  .group.h-full.crm-opportunities-conversion-rate
-  .hl-card-header {
+#location-dashboard .crm-opportunities-conversion-rate .hl-card-header {
   background: var(--bg-dashboard-three) !important;
   box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px !important;
-  border-radius: 10px;
+  border-radius: 20px 3px 20px 21px;
   border: none !important;
-    display: flex !important;
+  display: flex !important;
   align-items: center !important;
-  justify-content:center !important;
+  justify-content: center !important;
+  padding: 2rem !important;
 }
 #location-dashboard .crm-opportunities-status .hl-card {
   background: var(--bg-dashboard-one-card) !important;
@@ -329,7 +333,7 @@ div#app div#sidebar-v2 nav.flex-1.w-full img {
   border: none !important;
 }
 
-#location-dashboard .group.h-full.crm-opportunities-conversion-rate .hl-card {
+#location-dashboard .crm-opportunities-conversion-rate .hl-card {
   background: var(--bg-dashboard-three-card) !important;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   border-radius: 10px;
