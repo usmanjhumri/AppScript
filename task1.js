@@ -92,5 +92,36 @@ btn.appendChild(button);
 
 
 
+// doing same width of boxes //
+function waitElement(selector) {
+  return new Promise((resolve,reject)=>{
+      let elm = document.querySelector(selector);
+      if(elm){
+          resolve(elm);
+      }else{
+          new MutationObserver((obs,mutation)=>{
+              elm = document.querySelector(selector);
+              if(elm){
+                  mutation.disconnect();
+                  resolve(elm);
+              }
+          }).observe(document,{subtree: true, childList: true})
+      }
+  })
+}
 
+window.addEventListener('routeChangeEvent',()=>{
+  if(location.href.includes('dashboard')){
+      waitElement('.grid-stack .dashboard-widget-module-custom').then(()=>{
+          const gridStack = document.querySelector('.grid-stack ')
+          const gridstack = gridStack.gridstack;
+          const elms = Array.from(gridstack.getGridItems());
+          const filtered = elms.filter(x=> x.getAttribute('gs-y')==0).reverse();
+          filtered.forEach((stack,ind)=>{
+              stack.setAttribute('gs-w',4);
+              stack.setAttribute('gs-x', 4 * ind)
+          })
+      })        
+  }
+})
 
