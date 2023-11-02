@@ -70,19 +70,14 @@ span.search-shortcut {
 }
 
 .sidebar-v2-location #sidebar-v2 .hl_nav-header-without-footer nav a.active,
-.sidebar-v2-location #sidebar-v2 .hl_nav-header-without-footer nav a:hover {
-  border-radius: 16px;
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-
-  background: #fe6c64 !important;
-}
+.sidebar-v2-location #sidebar-v2 .hl_nav-header-without-footer nav a:hover,
 .sidebar-v2-agency #sidebar-v2 .hl_nav-header-without-footer nav a.active,
 .sidebar-v2-agency #sidebar-v2 .hl_nav-header-without-footer nav a:hover {
   border-radius: 16px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-
   background: #fe6c64 !important;
 }
+
 .sidebar-v2-location
   #sidebar-v2
   .hl_nav-header-without-footer
@@ -237,6 +232,54 @@ div#app div#sidebar-v2 nav.flex-1.w-full img {
   word-spacing: 2px !important;
   text-transform: uppercase !important;
 }
-#location-dashboard .n-config-provider i {
+#location-dashboard .n-config-provider i,
+header.hl_header.w100 .hl_header--controls i {
   color: black !important;
+}
+
+.location-dashboard_header
+  .hl-header-content
+  .hl-title-container
+  .title.hl-display-sm-medium {
+  font-weight: 700 !important;
+  letter-spacing: 1.5px !important;
+  text-transform: uppercase !important;
+}
+
+.flex.mb-4.h-7.flex-row.md\:flex-col.lg\:flex-row.xl\:flex-row.items-start.justify-between.px-2 {
+  margin-bottom: 10px !important;
+}
+
+#bookedAppointments__::-webkit-scrollbar {
+  width: 4px;
+}
+
+#bookedAppointments__::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+#bookedAppointments__::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 50px;
+}
+
+::-webkit-scrollbar {
+  width: 4px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 50px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+#bookedAppointments__::-webkit-scrollbar-thumb:hover {
+  background: #555;
 }
