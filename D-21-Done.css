@@ -227,3 +227,7 @@ div#app div#sidebar-v2 nav.flex-1.w-full img {
   .flex.flex-col.text-left.text-lg.menu-title.px-2.py-2.md\:px-3.md\:py-2.mt-2.font-medium {
   color: #ffffff !important;
 }
+#app div#mobileresphambeg {
+    display: none !important;
+  }
+  
