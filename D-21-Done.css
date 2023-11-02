@@ -291,7 +291,8 @@ header.hl_header.w100 .hl_header--controls i {
 }
 #location-dashboard .crm-opportunities-status .hl-card-header {
   background: var(--bg-dashboard-one) !important;
-  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px !important;
+  box-shadow: inset rgba(0, 0, 0, 0.19) 0px 10px 20px,
+    inset rgba(0, 0, 0, 0.23) 0px 6px 6px !important;
   border-radius: 20px 3px 20px 21px;
   border: none !important;
   display: flex !important;
@@ -301,7 +302,8 @@ header.hl_header.w100 .hl_header--controls i {
 }
 #location-dashboard .crm-opportunities-value .hl-card-header {
   background: var(--bg-dashboard-two) !important;
-  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px !important;
+  box-shadow: inset rgba(0, 0, 0, 0.19) 0px 10px 20px,
+    inset rgba(0, 0, 0, 0.23) 0px 6px 6px !important;
   border-radius: 24px 5px 25px 5px;
   border: none !important;
   display: flex !important;
@@ -311,7 +313,8 @@ header.hl_header.w100 .hl_header--controls i {
 }
 #location-dashboard .crm-opportunities-conversion-rate .hl-card-header {
   background: var(--bg-dashboard-three) !important;
-  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px !important;
+  box-shadow: inset rgba(0, 0, 0, 0.19) 0px 10px 20px,
+    inset rgba(0, 0, 0, 0.23) 0px 6px 6px !important;
   border-radius: 20px 3px 20px 21px;
   border: none !important;
   display: flex !important;
@@ -338,4 +341,84 @@ header.hl_header.w100 .hl_header--controls i {
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   border-radius: 10px;
   border: none !important;
+}
+
+#location-dashboard
+  :is(
+    .group.h-full.crm-opportunities-funnel,
+    .group.h-full.crm-opportunities-stages-distribution,
+    .group.h-full.crm-locations-tasks,
+    .group.h-full.crm-conversations-manual-actions,
+    .group.h-full.automations-attribution-lead-sources,
+    .group.h-full.automations-reporting-google-analytics-count-report,
+    .group.h-full.automations-reporting-google-analytics-chart-report,
+    .group.h-full.automations-reporting-gmb-report,
+    .group.h-full.automations-reporting-facebook-ads-report,
+    .group.h-full.automations-reporting-google-ads-report
+  )
+  .hl-card-header {
+  background: #ffe8e1 !important;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px !important;
+  border-radius: 10px;
+  border: none !important;
+}
+
+#location-dashboard
+  :is(
+    .group.h-full.crm-opportunities-funnel,
+    .group.h-full.crm-opportunities-stages-distribution,
+    .group.h-full.crm-locations-tasks,
+    .group.h-full.crm-conversations-manual-actions,
+    .group.h-full.automations-attribution-lead-sources,
+    .group.h-full.automations-reporting-google-analytics-count-report,
+    .group.h-full.automations-reporting-google-analytics-chart-report,
+    .group.h-full.automations-reporting-gmb-report,
+    .group.h-full.automations-reporting-facebook-ads-report,
+    .group.h-full.automations-reporting-google-ads-report
+  )
+  .hl-card {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-radius: 10px;
+  border: none !important;
+}
+
+#location-dashboard
+  .n-config-provider
+  .w-vw.z-10.top-0.py-2\.5.-mx-8.bg-gray-50.sticky {
+  background: linear-gradient(
+    45deg,
+    hsl(240deg 100% 96%) 0%,
+    hsl(209deg 100% 95%) 8%,
+    hsl(194deg 100% 94%) 17%,
+    hsl(184deg 94% 93%) 25%,
+    hsl(172deg 93% 87%) 33%,
+    hsl(157deg 93% 83%) 42%,
+    hsl(134deg 85% 82%) 50%,
+    hsl(132deg 86% 88%) 58%,
+    hsl(130deg 88% 94%) 67%,
+    hsl(0deg 0% 100%) 75%,
+    hsl(300deg 100% 100%) 83%,
+    hsl(300deg 100% 100%) 92%,
+    hsl(0deg 0% 100%) 100%
+  ) !important;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px !important;
+}
+
+div#location-dashboard .location-dashboard-wrapper {
+  background: linear-gradient(
+    45deg,
+    hsl(0deg 0% 100%) 0%,
+    hsl(183deg 100% 91%) 8%,
+    hsl(183deg 100% 80%) 17%,
+    hsl(183deg 100% 61%) 25%,
+    hsl(174deg 90% 67%) 33%,
+    hsl(159deg 87% 74%) 42%,
+    hsl(134deg 80% 81%) 50%,
+    hsl(184deg 100% 72%) 58%,
+    hsl(201deg 100% 86%) 67%,
+    hsl(300deg 100% 91%) 75%,
+    hsl(227deg 100% 89%) 83%,
+    hsl(199deg 100% 75%) 92%,
+    hsl(184deg 69% 58%) 100%
+  ) !important;
 }
