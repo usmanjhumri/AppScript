@@ -312,16 +312,30 @@ header.hl_header.w100 .hl_header--controls i {
   box-shadow: inset rgba(0, 0, 0, 0.19) 0px 10px 20px,
     inset rgba(0, 0, 0, 0.23) 0px 6px 6px !important;
   border-radius: 25px 0 25px 0;
-
   border: none !important;
   padding: 2rem !important;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+}
+#location-dashboard
+  :is(
+    .crm-opportunities-status,
+    .crm-opportunities-value,
+    .crm-opportunities-conversion-rate
+  )
+  .hl-card-header
+  .text-gray-900.hl-text-md-medium {
+  font-size: 1.4rem;
 }
 #location-dashboard .crm-opportunities-value .hl-card-header {
   background: var(--bg-dashboard-two) !important;
   box-shadow: inset rgba(0, 0, 0, 0.19) 0px 10px 20px,
     inset rgba(0, 0, 0, 0.23) 0px 6px 6px !important;
   border-radius: 25px 0px 25px 0px;
-
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
   border: none !important;
   padding: 2rem !important;
 }
@@ -330,9 +344,10 @@ header.hl_header.w100 .hl_header--controls i {
   box-shadow: inset rgba(0, 0, 0, 0.19) 0px 10px 20px,
     inset rgba(0, 0, 0, 0.23) 0px 6px 6px !important;
   border-radius: 25px 0px 25px 0px;
-
   border: none !important;
-
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
   padding: 2rem !important;
 }
 #location-dashboard .crm-opportunities-status .hl-card {
