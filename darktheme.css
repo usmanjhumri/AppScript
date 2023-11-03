@@ -166,7 +166,7 @@ div#sidebar-v2
 .flex.flex-col.text-left.text-lg.menu-title.px-2.py-2.md\:px-3.md\:py-2.mt-2.font-medium {
   color: var(--black) !important;
 }
-.sidebar-v2-location #sidebar-v2 #backButtonv2 {
+#backButtonv2 {
   background: #333333 !important;
   box-shadow: 0.3rem 0.3rem 0.6rem var(--greyLight-2),
     -0.2rem -0.2rem 0.5rem var(--white1);
