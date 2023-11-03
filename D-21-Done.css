@@ -256,6 +256,18 @@ header.hl_header.w100 .hl_header--controls i {
   font-weight: 700 !important;
   letter-spacing: 1.5px !important;
   text-transform: uppercase !important;
+  background: linear-gradient(
+    to right top,
+    #051937,
+    #004d7a,
+    #008793,
+    #00bf72,
+    #a8eb12
+  ) !important;
+  background-clip: clip !important;
+  text-fill-color: transparent !important;
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
 }
 
 .flex.mb-4.h-7.flex-row.md\:flex-col.lg\:flex-row.xl\:flex-row.items-start.justify-between.px-2 {
@@ -300,12 +312,8 @@ header.hl_header.w100 .hl_header--controls i {
   box-shadow: inset rgba(0, 0, 0, 0.19) 0px 10px 20px,
     inset rgba(0, 0, 0, 0.23) 0px 6px 6px !important;
   border-radius: 25px 0 25px 0;
-  width: 90%;
-  margin: auto;
+
   border: none !important;
-  display: flex !important;
-  align-items: center !important;
-  justify-content: center !important;
   padding: 2rem !important;
 }
 #location-dashboard .crm-opportunities-value .hl-card-header {
@@ -313,12 +321,8 @@ header.hl_header.w100 .hl_header--controls i {
   box-shadow: inset rgba(0, 0, 0, 0.19) 0px 10px 20px,
     inset rgba(0, 0, 0, 0.23) 0px 6px 6px !important;
   border-radius: 25px 0px 25px 0px;
-  width: 90%;
-  margin: auto;
+
   border: none !important;
-  display: flex !important;
-  align-items: center !important;
-  justify-content: center !important;
   padding: 2rem !important;
 }
 #location-dashboard .crm-opportunities-conversion-rate .hl-card-header {
@@ -326,12 +330,9 @@ header.hl_header.w100 .hl_header--controls i {
   box-shadow: inset rgba(0, 0, 0, 0.19) 0px 10px 20px,
     inset rgba(0, 0, 0, 0.23) 0px 6px 6px !important;
   border-radius: 25px 0px 25px 0px;
-  width: 90%;
-  margin: auto;
+
   border: none !important;
-  display: flex !important;
-  align-items: center !important;
-  justify-content: center !important;
+
   padding: 2rem !important;
 }
 #location-dashboard .crm-opportunities-status .hl-card {
@@ -340,7 +341,7 @@ header.hl_header.w100 .hl_header--controls i {
   box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px !important;
   border-radius: 10px;
   border: none !important;
-  padding: 1rem;
+  padding: 1rem !important;
 }
 
 #location-dashboard .crm-opportunities-value .hl-card {
