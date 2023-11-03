@@ -152,19 +152,6 @@ div#location-switcher-sidbar-v2 i {
   padding: 0px 5px !important;
 }
 
-.container-fluid .hl_header--controls #canny_logs-toggle,
-#hl_header--help-icon,
-#recent_activities-toggle,
-.avatar_img {
-  background: var(--bg-dashboard) !important;
-  box-shadow: 0.3rem 0.3rem 0.6rem var(--greyLight-2),
-    -0.2rem -0.2rem 0.5rem var(--white1);
-  color: var(--black) !important;
-}
-.container-fluid .hl_header--controls i {
-  color: var(--black) !important;
-}
-
 .hl_header--controls {
   gap: 10px;
 }
@@ -195,7 +182,7 @@ div#sidebar-v2
   #sidebar-v2
   #location-switcher-sidbar-v2
   span.hl_text-overflow.justify-center.hl_switcher-loc-city.font-small {
-  color: #000 !important;
+  color: #ffffff !important;
   font-weight: 600 !important;
 }
 
