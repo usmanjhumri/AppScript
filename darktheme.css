@@ -59,17 +59,15 @@ span.search-shortcut {
 
 [class*="hl_nav"] a.active {
   background: #333333 !important;
-  color: #000000 !important;
+  color: #ffffff !important;
   border-radius: 3px !important;
-  box-shadow: 0.8rem 0.8rem 1.4rem var(--greyLight-2),
-    -0.2rem -0.2rem 1.8rem var(--white1) !important;
+  box-shadow: 0 0 10px rgba(200, 200, 200, 0.3) !important;
 }
 [class*="hl_nav"] a:hover {
   border-radius: 3px !important;
   background: #333333 !important;
   border-radius: 3px !important;
-  box-shadow: 0.8rem 0.8rem 1.4rem var(--greyLight-2),
-    -0.2rem -0.2rem 1.8rem var(--white1) !important;
+  box-shadow: 0 0 10px rgba(200, 200, 200, 0.3) !important;
 }
 
 div#app div#sidebar-v2 nav.flex-1.w-full img {
@@ -97,11 +95,9 @@ a#sb_divider-1:active {
 }
 
 .sidebar-v2-location #sidebar-v2 .hl_collapse-button {
-  background: var(--themePrimary);
-  color: var(--themeSecondary);
-  color: #e4ebf5;
-  box-shadow: 0.3rem 0.3rem 0.6rem var(--greyLight-2),
-    -0.6rem -0.6rem 0.9rem var(--white1);
+  background: #ffffff !important;
+  color: #333333 !important;
+  box-shadow: none !important;
 }
 
 .sidebar-v2-location #sidebar-v2 #location-switcher-sidbar-v2 {
@@ -133,14 +129,6 @@ div#globalSearchOpener,
   margin-bottom: 10px;
 }
 
-span {
-  color: var(--text-color-full) !important;
-}
-
-.sidebar-v2-location #sidebar-v2 .hl_nav-header-without-footer nav a:hover {
-  background: rgba(159, 168, 185, 0.4117647059) !important;
-}
-
 .sidebar-v2-location .w-full .hl_settings--body {
   background-color: var(--transparent) !important;
 }
@@ -150,6 +138,10 @@ div#location-switcher-sidbar-v2 i {
   box-shadow: 0.3rem 0.3rem 0.6rem var(--greyLight-2),
     -0.2rem -0.2rem 0.5rem var(--white1);
   padding: 0px 5px !important;
+}
+
+#globalSearchOpener span {
+  color: #ffffff !important;
 }
 
 .hl_header--controls {
@@ -174,16 +166,10 @@ div#sidebar-v2
 .flex.flex-col.text-left.text-lg.menu-title.px-2.py-2.md\:px-3.md\:py-2.mt-2.font-medium {
   color: var(--black) !important;
 }
-#backButtonv2 span {
-  color: #ffffff !important;
-}
-
-.sidebar-v2-location
-  #sidebar-v2
-  #location-switcher-sidbar-v2
-  span.hl_text-overflow.justify-center.hl_switcher-loc-city.font-small {
-  color: #ffffff !important;
-  font-weight: 600 !important;
+.sidebar-v2-location #sidebar-v2 #backButtonv2 {
+  background: #333333 !important;
+  box-shadow: 0.3rem 0.3rem 0.6rem var(--greyLight-2),
+    -0.2rem -0.2rem 0.5rem var(--white1);
 }
 
 /* ------------------------------------------------------------------- LIGHT-THEME-DASHBOARD HAS BEEN COMPLETED --------------------------------------------------------------------- */
