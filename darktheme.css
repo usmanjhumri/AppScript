@@ -57,19 +57,6 @@ span.search-shortcut {
   margin: auto;
 }
 
-[class*="hl_nav"] a.active {
-  background: #333333 !important;
-  color: #ffffff !important;
-  border-radius: 3px !important;
-  box-shadow: 0 0 10px rgba(200, 200, 200, 0.3) !important;
-}
-[class*="hl_nav"] a:hover {
-  border-radius: 3px !important;
-  background: #333333 !important;
-  border-radius: 3px !important;
-  box-shadow: 0 0 10px rgba(200, 200, 200, 0.3) !important;
-}
-
 div#app div#sidebar-v2 nav.flex-1.w-full img {
   filter: invert(-100%);
 }
@@ -115,24 +102,6 @@ div#globalSearchOpener,
     -0.2rem -0.2rem 0.5rem var(--white1);
 }
 
-#head {
-  background: var(--back-gradient1);
-  padding: 10px;
-  border-radius: 5px;
-  margin-bottom: 10px;
-}
-
-#body {
-  background: var(--back-gradient2);
-  padding: 10px;
-  border-radius: 5px;
-  margin-bottom: 10px;
-}
-
-.sidebar-v2-location .w-full .hl_settings--body {
-  background-color: var(--transparent) !important;
-}
-
 div#location-switcher-sidbar-v2 i {
   background: #333333 !important;
   box-shadow: 0.3rem 0.3rem 0.6rem var(--greyLight-2),
@@ -147,15 +116,7 @@ div#location-switcher-sidbar-v2 i {
 .hl_header--controls {
   gap: 10px;
 }
-.sidebar-v2-location .hl_header .container-fluid {
-  padding: none !important;
-}
 
-#location-dashboard .n-config-provider div#__FPSC_ID_1_1698428418653 {
-  background: var(--bg-dashboard) !important;
-  box-shadow: 0.3rem 0.3rem 0.6rem var(--greyLight-2),
-    -0.2rem -0.2rem 0.5rem var(--white1);
-}
 div#sidebar-v2
   .flex.flex-col.overflow-y-auto.overflow-x-hidden.w-full.hl_nav-header-without-footer
   nav.flex-1.w-full
@@ -163,18 +124,6 @@ div#sidebar-v2
   display: none !important;
 }
 
-.flex.flex-col.text-left.text-lg.menu-title.px-2.py-2.md\:px-3.md\:py-2.mt-2.font-medium {
-  color: var(--black) !important;
-}
-#backButtonv2 {
-  background: #333333 !important;
-  box-shadow: 0.3rem 0.3rem 0.6rem var(--greyLight-2),
-    -0.2rem -0.2rem 0.5rem var(--white1);
-}
-#backButtonv2 span,
-i {
-  color: #ffffff !important;
-}
 #sidebar-v2 nav a span {
   color: #ffffff !important;
 }
@@ -187,11 +136,17 @@ i {
   background: #333333 !important;
   box-shadow: 0 0 10px rgba(200, 200, 200, 0.3) !important;
 }
-div#location-dashboard .location-dashboard-wrapper {
-  background: #333333 !important;
+
+.sidebar-v2-location #sidebar-v2 .hl_nav-header nav a.active.divider {
+  display: none !important;
 }
-.sidebar-v2-location .hl_header {
-  background: #333333 !important;
-  box-shadow: 0 0 10px rgba(200, 200, 200, 0.3) !important;
+
+.sidebar-v2-location #sidebar-v2 .hl_nav-header nav a.divider {
+  display: none !important;
 }
+#location-dashboard .n-config-provider i,
+header.hl_header.w100 .hl_header--controls i {
+  color: black !important;
+}
+
 /* ------------------------------------------------------------------- LIGHT-THEME-DASHBOARD HAS BEEN COMPLETED --------------------------------------------------------------------- */
