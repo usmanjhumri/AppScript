@@ -337,8 +337,7 @@ header.hl_header.w100 .hl_header--controls i {
 #location-dashboard .crm-opportunities-status .hl-card {
   background: var(--bg-dashboard-one-card) !important;
   /* box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; */
-  box-shadow: inset rgba(0, 0, 0, 0.19) 0px 10px 20px,
-    inset rgba(0, 0, 0, 0.23) 0px 6px 6px !important;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px !important;
   border-radius: 10px;
   border: none !important;
   padding: 1rem;
@@ -346,9 +345,7 @@ header.hl_header.w100 .hl_header--controls i {
 
 #location-dashboard .crm-opportunities-value .hl-card {
   background: var(--bg-dashboard-two-card) !important;
-  /* box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; */
-  box-shadow: inset rgba(0, 0, 0, 0.19) 0px 10px 20px,
-    inset rgba(0, 0, 0, 0.23) 0px 6px 6px !important;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px !important;
   border-radius: 10px;
   border: none !important;
   padding: 1rem;
@@ -356,9 +353,7 @@ header.hl_header.w100 .hl_header--controls i {
 
 #location-dashboard .crm-opportunities-conversion-rate .hl-card {
   background: var(--bg-dashboard-three-card) !important;
-  /* box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; */
-  box-shadow: inset rgba(0, 0, 0, 0.19) 0px 10px 20px,
-    inset rgba(0, 0, 0, 0.23) 0px 6px 6px !important;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px !important;
   border-radius: 10px;
   border: none !important;
   padding: 1rem;
