@@ -135,8 +135,17 @@ span.search-shortcut {
   margin-bottom: 0px !important;
 }
 #location-switcher-sidbar-v2 svg {
-  color: black !important;
-  filter: invert(100%);
+  color: #ffffff !important;
+  filter: invert(0) !important;
+}
+#location-switcher-sidbar-v2 .hl_location-text span {
+  color: #ffffff !important;
+}
+div#app .sidebar-v2-agency div#sidebar-v2 nav img {
+  filter: invert(0) !important;
+}
+div#app .sidebar-v2-location div#sidebar-v2 nav img {
+  filter: invert(0) !important;
 }
 div#globalSearchOpener,
 #quickActions {
@@ -214,9 +223,6 @@ div#sidebar-v2 {
 .sidebar-v2-location #sidebar-v2 .hl_nav-header nav a.divider {
   display: none !important;
 }
-div#app div#sidebar-v2 nav.flex-1.w-full img {
-  filter: invert(-100%);
-}
 
 #app #sidebar-v2 nav i {
   color: #ffffff !important;
@@ -293,7 +299,9 @@ header.hl_header.w100 .hl_header--controls i {
   background: var(--bg-dashboard-one) !important;
   box-shadow: inset rgba(0, 0, 0, 0.19) 0px 10px 20px,
     inset rgba(0, 0, 0, 0.23) 0px 6px 6px !important;
-  border-radius: 20px 3px 20px 21px;
+  border-radius: 25px 0 25px 0;
+  width: 90%;
+  margin: auto;
   border: none !important;
   display: flex !important;
   align-items: center !important;
@@ -304,7 +312,9 @@ header.hl_header.w100 .hl_header--controls i {
   background: var(--bg-dashboard-two) !important;
   box-shadow: inset rgba(0, 0, 0, 0.19) 0px 10px 20px,
     inset rgba(0, 0, 0, 0.23) 0px 6px 6px !important;
-  border-radius: 24px 5px 25px 5px;
+  border-radius: 25px 0px 25px 0px;
+  width: 90%;
+  margin: auto;
   border: none !important;
   display: flex !important;
   align-items: center !important;
@@ -315,7 +325,9 @@ header.hl_header.w100 .hl_header--controls i {
   background: var(--bg-dashboard-three) !important;
   box-shadow: inset rgba(0, 0, 0, 0.19) 0px 10px 20px,
     inset rgba(0, 0, 0, 0.23) 0px 6px 6px !important;
-  border-radius: 20px 3px 20px 21px;
+  border-radius: 25px 0px 25px 0px;
+  width: 90%;
+  margin: auto;
   border: none !important;
   display: flex !important;
   align-items: center !important;
@@ -324,23 +336,32 @@ header.hl_header.w100 .hl_header--controls i {
 }
 #location-dashboard .crm-opportunities-status .hl-card {
   background: var(--bg-dashboard-one-card) !important;
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  /* box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; */
+  box-shadow: inset rgba(0, 0, 0, 0.19) 0px 10px 20px,
+    inset rgba(0, 0, 0, 0.23) 0px 6px 6px !important;
   border-radius: 10px;
   border: none !important;
+  padding: 1rem;
 }
 
 #location-dashboard .crm-opportunities-value .hl-card {
   background: var(--bg-dashboard-two-card) !important;
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  /* box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; */
+  box-shadow: inset rgba(0, 0, 0, 0.19) 0px 10px 20px,
+    inset rgba(0, 0, 0, 0.23) 0px 6px 6px !important;
   border-radius: 10px;
   border: none !important;
+  padding: 1rem;
 }
 
 #location-dashboard .crm-opportunities-conversion-rate .hl-card {
   background: var(--bg-dashboard-three-card) !important;
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  /* box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; */
+  box-shadow: inset rgba(0, 0, 0, 0.19) 0px 10px 20px,
+    inset rgba(0, 0, 0, 0.23) 0px 6px 6px !important;
   border-radius: 10px;
   border: none !important;
+  padding: 1rem;
 }
 
 #location-dashboard
@@ -373,7 +394,8 @@ header.hl_header.w100 .hl_header--controls i {
     hsl(188deg 88% 79%) 92%,
     hsl(179deg 73% 71%) 100%
   ) !important;
-  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px !important;
+  box-shadow: inset rgba(0, 0, 0, 0.19) 0px 10px 20px,
+    inset rgba(0, 0, 0, 0.23) 0px 6px 6px !important;
   border-radius: 10px;
   border: none !important;
 }
@@ -420,22 +442,7 @@ header.hl_header.w100 .hl_header--controls i {
 }
 
 div#location-dashboard .location-dashboard-wrapper {
-  background: linear-gradient(
-    45deg,
-    hsl(0deg 0% 100%) 0%,
-    hsl(183deg 100% 91%) 8%,
-    hsl(183deg 100% 80%) 17%,
-    hsl(183deg 100% 61%) 25%,
-    hsl(174deg 90% 67%) 33%,
-    hsl(159deg 87% 74%) 42%,
-    hsl(134deg 80% 81%) 50%,
-    hsl(184deg 100% 72%) 58%,
-    hsl(201deg 100% 86%) 67%,
-    hsl(300deg 100% 91%) 75%,
-    hsl(227deg 100% 89%) 83%,
-    hsl(199deg 100% 75%) 92%,
-    hsl(184deg 69% 58%) 100%
-  ) !important;
+  background: linear-gradient(to right, #ededed, #fffed8) !important;
 }
 :is(.crm-opportunities-status, .crm-opportunities-value, )
   .echarts.chart
@@ -445,6 +452,5 @@ div#location-dashboard .location-dashboard-wrapper {
 .crm-opportunities-conversion-rate .echarts path:nth-child(4) {
   fill: #fe6c64 !important;
 }
-
 
 /* --------------------------------------------------------------------- Dashboard D-21 has been readu --------------------------------------------------------------------------- */
