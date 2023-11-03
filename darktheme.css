@@ -181,4 +181,17 @@ i {
 #app div#mobileresphambeg {
   display: none !important;
 }
+#location-dashboard
+  .n-config-provider
+  .w-vw.z-10.top-0.py-2\.5.-mx-8.bg-gray-50.sticky {
+  background: #333333 !important;
+  box-shadow: 0 0 10px rgba(200, 200, 200, 0.3) !important;
+}
+div#location-dashboard .location-dashboard-wrapper {
+  background: #333333 !important;
+}
+.sidebar-v2-location .hl_header {
+  background: #333333 !important;
+  box-shadow: 0 0 10px rgba(200, 200, 200, 0.3) !important;
+}
 /* ------------------------------------------------------------------- LIGHT-THEME-DASHBOARD HAS BEEN COMPLETED --------------------------------------------------------------------- */
