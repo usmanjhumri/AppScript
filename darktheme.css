@@ -171,5 +171,14 @@ div#sidebar-v2
   box-shadow: 0.3rem 0.3rem 0.6rem var(--greyLight-2),
     -0.2rem -0.2rem 0.5rem var(--white1);
 }
-
+#backButtonv2 span,
+i {
+  color: #ffffff !important;
+}
+#sidebar-v2 nav a span {
+  color: #ffffff !important;
+}
+#app div#mobileresphambeg {
+  display: none !important;
+}
 /* ------------------------------------------------------------------- LIGHT-THEME-DASHBOARD HAS BEEN COMPLETED --------------------------------------------------------------------- */
