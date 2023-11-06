@@ -147,5 +147,29 @@ div#sidebar-v2
 header.hl_header.w100 .hl_header--controls i {
   color: black !important;
 }
+#location-dashboard
+  :is(
+    .group.h-full.crm-opportunities-funnel,
+    .group.h-full.crm-opportunities-stages-distribution,
+    .group.h-full.crm-locations-tasks,
+    .group.h-full.crm-conversations-manual-actions,
+    .group.h-full.automations-attribution-lead-sources,
+    .group.h-full.automations-reporting-google-analytics-count-report,
+    .group.h-full.automations-reporting-google-analytics-chart-report,
+    .group.h-full.automations-reporting-gmb-report,
+    .group.h-full.automations-reporting-facebook-ads-report,
+    .group.h-full.automations-reporting-google-ads-report,
+    .crm-opportunities-conversion-rate,
+    .crm-opportunities-value,
+    .crm-opportunities-status
+  )
+  .hl-card {
+  background: transparent !important;
+}
 
-/* ------------------------------------------------------------------- LIGHT-THEME-DASHBOARD HAS BEEN COMPLETED --------------------------------------------------------------------- */
+#location-dashboard
+  .font-sans.hl-wrapper-container.bg-gray-50.h-auto.min-h-full.location-dashboard-wrapper.flex.flex-col {
+  background: red !important;
+}
+
+/* ------------------------------------------------------------------- DARK-THEME-DASHBOARD HAS BEEN COMPLETED --------------------------------------------------------------------- */
