@@ -125,3 +125,14 @@ window.addEventListener('routeChangeEvent',()=>{
   }
 })
 
+
+
+// change bg color of header on scroll //
+
+// const locationDashboard = document.querySelector("#location-dashboard");
+// locationDashboard.addEventListener("scroll", () => {
+//   const head = document.querySelector(".hl_header");
+//   head.classList.toggle("sticky-nav", locationDashboard.scrollTop > 80);
+// });
+
+//    End this code     //
