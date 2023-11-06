@@ -32,7 +32,6 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-position-y: center;
-  background: #1a1f2c;
 }
 
 #sidebar-v2 {
@@ -133,7 +132,7 @@ div#sidebar-v2
 #location-dashboard
   .n-config-provider
   .w-vw.z-10.top-0.py-2\.5.-mx-8.bg-gray-50.sticky {
-  background: #333333 !important;
+  background: #ffbc00 !important;
   box-shadow: 0 0 10px rgba(200, 200, 200, 0.3) !important;
 }
 
