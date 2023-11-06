@@ -230,9 +230,35 @@ div#sidebar-v2
   .hl-card-header {
   border-bottom: 2px dotted #333333;
 }
+#location-dashboard
+  :is(
+    .group.h-full.crm-opportunities-funnel,
+    .group.h-full.crm-opportunities-stages-distribution,
+    .group.h-full.crm-locations-tasks,
+    .group.h-full.crm-conversations-manual-actions,
+    .group.h-full.automations-attribution-lead-sources,
+    .group.h-full.automations-reporting-google-analytics-count-report,
+    .group.h-full.automations-reporting-google-analytics-chart-report,
+    .group.h-full.automations-reporting-gmb-report,
+    .group.h-full.automations-reporting-facebook-ads-report,
+    .group.h-full.automations-reporting-google-ads-report,
+    .crm-opportunities-conversion-rate,
+    .crm-opportunities-value,
+    .crm-opportunities-status
+  )
+  .hl-card
+  .hl-card-header
+  .truncate.mr-2
+  .text-gray-900.hl-text-md-medium {
+  border-bottom: 2px dotted #333333;
+  font-weight: 700 !important;
+  word-spacing: 2px !important;
+  letter-spacing: 1px !important;
+}
 #location-dashboard .hl-wrapper-container.location-dashboard-wrapper {
   background: #e8eaec !important;
 }
+
 #app .hl_header {
   background: #e8eaec !important;
   box-shadow: none !important;
