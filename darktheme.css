@@ -43,17 +43,30 @@ body {
   color: black !important;
 }
 
-#sidebar-v2 nav a:hover span,
-#sidebar-v2 nav a.active span,
-#sidebar-v2 nav a:hover img,
-#sidebar-v2 nav a.active img {
-  color: #ffffff !important;
-  filter: invert(0) !important;
+.sidebar-v2-agency #sidebar-v2 .hl_nav-header nav a.active,
+.sidebar-v2-agency #sidebar-v2 .hl_nav-header nav a:hover,
+.sidebar-v2-agency #sidebar-v2 .hl_nav-settings nav a.active,
+.sidebar-v2-agency #sidebar-v2 .hl_nav-settings nav a:hover {
+  border-radius: 10px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  background: #c1c2cb !important;
+}
+.sidebar-v2-location #sidebar-v2 .hl_nav-header nav a.active,
+.sidebar-v2-location #sidebar-v2 .hl_nav-header nav a:hover,
+.sidebar-v2-location #sidebar-v2 .hl_nav-settings nav a.active,
+.sidebar-v2-location #sidebar-v2 .hl_nav-settings nav a:hover {
+  border-radius: 10px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  background: #c1c2cb !important;
 }
 
-#sidebar-v2 nav a:hover i,
-#sidebar-v2 nav a.active i {
-  color: white !important;
+.sidebar-v2-location #sidebar-v2 .hl_nav-header-without-footer nav a.active,
+.sidebar-v2-location #sidebar-v2 .hl_nav-header-without-footer nav a:hover,
+.sidebar-v2-agency #sidebar-v2 .hl_nav-header-without-footer nav a.active,
+.sidebar-v2-agency #sidebar-v2 .hl_nav-header-without-footer nav a:hover {
+  border-radius: 10px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  background: #c1c2cb !important;
 }
 
 #sidebar-v2 nav a i {
@@ -125,7 +138,13 @@ div#location-switcher-sidbar-v2 i {
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   padding: 0px 5px !important;
 }
-
+div#location-switcher-sidbar-v2 .hl_location_icon.scale-2 {
+  filter: invert(1);
+}
+div#location-switcher-sidbar-v2 .hl_location-text span {
+  color: black !important;
+  font-weight: 600;
+}
 #globalSearchOpener span {
   color: #000000 !important;
 }
@@ -222,4 +241,12 @@ header.hl_header .container-fluid .hl_header--controls a#hl_header--help-icon {
   background: #4f00a2 !important;
 }
 
+:is(.crm-opportunities-status, .crm-opportunities-value, )
+  .echarts.chart
+  path:is(:nth-child(1), :nth-child(4), :nth-child(6), :nth-child(21)) {
+  fill: #000000 !important;
+}
+.crm-opportunities-conversion-rate .echarts path:nth-child(4) {
+  fill: #000000 !important;
+}
 /* ------------------------------------------------------------------- DARK-THEME-DASHBOARD HAS BEEN COMPLETED --------------------------------------------------------------------- */
