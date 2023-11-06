@@ -43,7 +43,7 @@ body {
   color: black !important;
 }
 
-.sidebar-v2-agency #sidebar-v2 .hl_nav-header nav a.active,
+/* .sidebar-v2-agency #sidebar-v2 .hl_nav-header nav a.active,
 .sidebar-v2-agency #sidebar-v2 .hl_nav-header nav a:hover,
 .sidebar-v2-agency #sidebar-v2 .hl_nav-settings nav a.active,
 .sidebar-v2-agency #sidebar-v2 .hl_nav-settings nav a:hover {
@@ -67,7 +67,25 @@ body {
   border-radius: 10px;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
   background: #c1c2cb !important;
+} */
+
+.sidebar-v2-agency #sidebar-v2 .hl_nav-header nav a.active,
+.sidebar-v2-location #sidebar-v2 .hl_nav-header nav a.active,
+.sidebar-v2-agency #sidebar-v2 .hl_nav-settings nav a.active,
+.sidebar-v2-location #sidebar-v2 .hl_nav-settings nav a.active,
+.sidebar-v2-agency #sidebar-v2 .hl_nav-header nav a:hover,
+.sidebar-v2-location #sidebar-v2 .hl_nav-header nav a:hover,
+.sidebar-v2-agency #sidebar-v2 .hl_nav-settings nav a:hover,
+.sidebar-v2-location #sidebar-v2 .hl_nav-settings nav a:hover,
+.sidebar-v2-location #sidebar-v2 .hl_nav-header-without-footer nav a.active,
+.sidebar-v2-agency #sidebar-v2 .hl_nav-header-without-footer nav a.active,
+.sidebar-v2-location #sidebar-v2 .hl_nav-header-without-footer nav a:hover,
+.sidebar-v2-agency #sidebar-v2 .hl_nav-header-without-footer nav a:hover {
+  border-radius: 10px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  background: #c1c2cb !important;
 }
+
 
 #sidebar-v2 nav a i {
   color: black !important;
@@ -230,7 +248,7 @@ div#sidebar-v2
   .hl-card-header {
   border-bottom: 2px dotted #333333;
 }
-#location-dashboard
+ #location-dashboard
   :is(
     .group.h-full.crm-opportunities-funnel,
     .group.h-full.crm-opportunities-stages-distribution,
@@ -247,14 +265,12 @@ div#sidebar-v2
     .crm-opportunities-status
   )
   .hl-card
-  .hl-card-header
-  .truncate.mr-2
-  .text-gray-900.hl-text-md-medium {
+  .hl-card-header .truncate.mr-2 .text-gray-900.hl-text-md-medium{
   border-bottom: 2px dotted #333333;
-  font-weight: 700 !important;
-  word-spacing: 2px !important;
-  letter-spacing: 1px !important;
-}
+    font-weight:700 !important;
+    word-spacing:2px !important;
+    letter-spacing:1px !important;
+}  
 #location-dashboard .hl-wrapper-container.location-dashboard-wrapper {
   background: #e8eaec !important;
 }
@@ -274,5 +290,9 @@ header.hl_header .container-fluid .hl_header--controls a#hl_header--help-icon {
 }
 .crm-opportunities-conversion-rate .echarts path:nth-child(4) {
   fill: #000000 !important;
+}
+
+.sidebar-v2-location #sidebar-v2 .menu-title {
+  color:black !important;
 }
 /* ------------------------------------------------------------------- DARK-THEME-DASHBOARD HAS BEEN COMPLETED --------------------------------------------------------------------- */
