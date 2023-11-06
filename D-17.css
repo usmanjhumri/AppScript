@@ -1166,15 +1166,9 @@ input#random24243-input {
   overflow: visible !important;
 }
 
-.firstclass .card-body {
-  /* width: 50% !important; */
-}
 
-.firstclass .card-body h3 {
-  position: relative !important;
-  /* left: 32px !important; */
-  font-weight: !important;
-}
+
+
 
 .bottom-stats>li:nth-child(1) {
   background: #ffffff !important;
