@@ -39,28 +39,25 @@ body {
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
 }
 
-#sidebar-v2 nav a span{
-  color:black !important;
+#sidebar-v2 nav a span {
+  color: black !important;
 }
-
 
 .sidebar-v2-agency #sidebar-v2 .hl_nav-header nav a.active,
 .sidebar-v2-agency #sidebar-v2 .hl_nav-header nav a:hover,
 .sidebar-v2-agency #sidebar-v2 .hl_nav-settings nav a.active,
 .sidebar-v2-agency #sidebar-v2 .hl_nav-settings nav a:hover {
   border-radius: 10px;
-  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
   background: #c1c2cb !important;
-  
 }
 .sidebar-v2-location #sidebar-v2 .hl_nav-header nav a.active,
 .sidebar-v2-location #sidebar-v2 .hl_nav-header nav a:hover,
 .sidebar-v2-location #sidebar-v2 .hl_nav-settings nav a.active,
 .sidebar-v2-location #sidebar-v2 .hl_nav-settings nav a:hover {
   border-radius: 10px;
-  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
   background: #c1c2cb !important;
-  
 }
 
 .sidebar-v2-location #sidebar-v2 .hl_nav-header-without-footer nav a.active,
@@ -68,20 +65,16 @@ body {
 .sidebar-v2-agency #sidebar-v2 .hl_nav-header-without-footer nav a.active,
 .sidebar-v2-agency #sidebar-v2 .hl_nav-header-without-footer nav a:hover {
   border-radius: 10px;
-  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
   background: #c1c2cb !important;
-  
 }
 
-
-
-#sidebar-v2 nav a i{
-  color:black !important;
+#sidebar-v2 nav a i {
+  color: black !important;
 }
 span.search-shortcut {
   background: #e8eaec !important;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-  
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 [class*="hl_nav"] a {
@@ -137,26 +130,26 @@ div#globalSearchOpener,
 #quickActions {
   margin: 0px 10px 0 10px;
   background: #e8eaec !important;
-     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 div#location-switcher-sidbar-v2 i {
   background: #000000 !important;
-     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   padding: 0px 5px !important;
 }
-div#location-switcher-sidbar-v2 .hl_location_icon.scale-2{
+div#location-switcher-sidbar-v2 .hl_location_icon.scale-2 {
   filter: invert(1);
 }
-div#location-switcher-sidbar-v2 .hl_location-text span{
-  color:black !important;
-  font-weight:600
+div#location-switcher-sidbar-v2 .hl_location-text span {
+  color: black !important;
+  font-weight: 600;
 }
 #globalSearchOpener span {
   color: #000000 !important;
 }
-#sidebar-v2 #globalSearchOpener .search-icon{
-  color:black !important;
+#sidebar-v2 #globalSearchOpener .search-icon {
+  color: black !important;
 }
 
 .hl_header--controls {
@@ -170,7 +163,6 @@ div#sidebar-v2
   display: none !important;
 }
 
-
 #app div#mobileresphambeg {
   display: none !important;
 }
@@ -182,7 +174,6 @@ div#sidebar-v2
   width: 100% !important;
   margin: auto !important;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    
 }
 
 .sidebar-v2-location #sidebar-v2 .hl_nav-header nav a.active.divider {
@@ -192,12 +183,11 @@ div#sidebar-v2
 .sidebar-v2-location #sidebar-v2 .hl_nav-header nav a.divider {
   display: none !important;
 }
-#location-dashboard .n-config-provider i
- {
+#location-dashboard .n-config-provider i {
   color: black !important;
 }
-#location-dashboard header.hl_header.w100 .hl_header--controls i{
-  color:white !important;
+#location-dashboard header.hl_header.w100 .hl_header--controls i {
+  color: white !important;
 }
 #location-dashboard
   :is(
@@ -218,7 +208,7 @@ div#sidebar-v2
   .hl-card {
   background: transparent !important;
   border: 2px dotted #333333;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 #location-dashboard
   :is(
@@ -239,8 +229,6 @@ div#sidebar-v2
   .hl-card
   .hl-card-header {
   border-bottom: 2px dotted #333333;
-   
-    
 }
 
 #location-dashboard .hl-wrapper-container.location-dashboard-wrapper {
@@ -248,7 +236,7 @@ div#sidebar-v2
 }
 
 #app .hl_header {
-    background: #e8eaec !important;
+  background: #e8eaec !important;
   box-shadow: none !important;
 }
 header.hl_header .container-fluid .hl_header--controls a#hl_header--help-icon {
