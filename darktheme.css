@@ -88,9 +88,8 @@ a#sb_divider-1:active {
 
 .sidebar-v2-location #sidebar-v2 #location-switcher-sidbar-v2 {
   background: var(--transparent) !important;
-  box-shadow: inset -4px -5px 10px var(--text-color-full) 70,
-    inset 4px 2px 5px rgba(174, 174, 192, 0.1254901961);
-  margin-bottom: 8px !important;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  margin-bottom: 12px !important;
 }
 
 div#globalSearchOpener,
@@ -194,4 +193,4 @@ header.hl_header.w100 .hl_header--controls i {
   background: #e8eaec !important;
 }
 
-/* ------------------------------------------------------------------- DARG-THEME-DASHBOARD HAS BEEN COMPLETED --------------------------------------------------------------------- */
+/* ------------------------------------------------------------------- DARK-THEME-DASHBOARD HAS BEEN COMPLETED --------------------------------------------------------------------- */
