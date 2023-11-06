@@ -194,8 +194,11 @@ header.hl_header.w100 .hl_header--controls i {
 }
 
 #app .hl_header {
-  background: transparent !important;
+  background: #e8eaec !important;
   box-shadow: none !important;
+}
+header.hl_header .container-fluid .hl_header--controls a#hl_header--help-icon {
+  background: #4f00a2 !important;
 }
 
 /* ------------------------------------------------------------------- DARK-THEME-DASHBOARD HAS BEEN COMPLETED --------------------------------------------------------------------- */
