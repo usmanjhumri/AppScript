@@ -230,11 +230,9 @@ div#sidebar-v2
   .hl-card-header {
   border-bottom: 2px dotted #333333;
 }
-
 #location-dashboard .hl-wrapper-container.location-dashboard-wrapper {
   background: #e8eaec !important;
 }
-
 #app .hl_header {
   background: #e8eaec !important;
   box-shadow: none !important;
