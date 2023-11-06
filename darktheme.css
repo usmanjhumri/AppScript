@@ -134,6 +134,8 @@ div#sidebar-v2
   .w-vw.z-10.top-0.py-2\.5.-mx-8.bg-gray-50.sticky {
   background: transparent !important;
   border: 1px solid #333333 !important;
+  width: 90% !important;
+  margin: auto !important;
 }
 
 .sidebar-v2-location #sidebar-v2 .hl_nav-header nav a.active.divider {
