@@ -1,5 +1,5 @@
 :root {
-  --side-n-headback: #333333;
+  --side-n-headback: #e8eaec;
   --sideheadback: #111111;
   --mobile-nav-back: #222222;
   --text-color-light: #999999;
@@ -39,8 +39,29 @@ body {
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
 }
 
+#sidebar-v2 nav a span {
+  color: black !important;
+}
+
+#sidebar-v2 nav a:hover span,
+#sidebar-v2 nav a.active span,
+#sidebar-v2 nav a:hover img,
+#sidebar-v2 nav a.active img {
+  color: #ffffff !important;
+  filter: invert(0) !important;
+}
+
+#sidebar-v2 nav a:hover i,
+#sidebar-v2 nav a.active i {
+  color: white !important;
+}
+
+#sidebar-v2 nav a i {
+  color: black !important;
+}
 span.search-shortcut {
-  background: #333333 !important;
+  background: #e8eaec !important;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 [class*="hl_nav"] a {
@@ -57,7 +78,7 @@ span.search-shortcut {
 }
 
 div#app div#sidebar-v2 nav.flex-1.w-full img {
-  filter: invert(-100%);
+  filter: invert(100%);
 }
 
 a#sb_divider-1 {
@@ -95,20 +116,21 @@ a#sb_divider-1:active {
 div#globalSearchOpener,
 #quickActions {
   margin: 0px 10px 0 10px;
-  background: #333333 !important;
-  box-shadow: 0.3rem 0.3rem 0.6rem var(--greyLight-2),
-    -0.2rem -0.2rem 0.5rem var(--white1);
+  background: #e8eaec !important;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 div#location-switcher-sidbar-v2 i {
-  background: #333333 !important;
-  box-shadow: 0.3rem 0.3rem 0.6rem var(--greyLight-2),
-    -0.2rem -0.2rem 0.5rem var(--white1);
+  background: #000000 !important;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   padding: 0px 5px !important;
 }
 
 #globalSearchOpener span {
-  color: #ffffff !important;
+  color: #000000 !important;
+}
+#sidebar-v2 #globalSearchOpener .search-icon {
+  color: black !important;
 }
 
 .hl_header--controls {
@@ -122,9 +144,6 @@ div#sidebar-v2
   display: none !important;
 }
 
-#sidebar-v2 nav a span {
-  color: #ffffff !important;
-}
 #app div#mobileresphambeg {
   display: none !important;
 }
@@ -135,6 +154,7 @@ div#sidebar-v2
   border: 1px solid #333333 !important;
   width: 100% !important;
   margin: auto !important;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 .sidebar-v2-location #sidebar-v2 .hl_nav-header nav a.active.divider {
@@ -167,6 +187,7 @@ header.hl_header.w100 .hl_header--controls i {
   .hl-card {
   background: transparent !important;
   border: 1px solid #333333;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 #location-dashboard
   :is(
