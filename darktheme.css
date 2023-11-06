@@ -36,7 +36,7 @@ body {
 
 #sidebar-v2 {
   background: var(--side-n-headback) !important;
-  box-shadow: -5px -5px 20px #111111, 5px 5px 20px #333333;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
 }
 
 span.search-shortcut {
@@ -132,8 +132,8 @@ div#sidebar-v2
 #location-dashboard
   .n-config-provider
   .w-vw.z-10.top-0.py-2\.5.-mx-8.bg-gray-50.sticky {
-  background: #ffbc00 !important;
-  box-shadow: 0 0 10px rgba(200, 200, 200, 0.3) !important;
+  background: transparent !important;
+  border: 1px solid #333333 !important;
 }
 
 .sidebar-v2-location #sidebar-v2 .hl_nav-header nav a.active.divider {
@@ -165,11 +165,31 @@ header.hl_header.w100 .hl_header--controls i {
   )
   .hl-card {
   background: transparent !important;
+  border: 1px solid #333333;
 }
-
 #location-dashboard
-  .font-sans.hl-wrapper-container.bg-gray-50.h-auto.min-h-full.location-dashboard-wrapper.flex.flex-col {
-  background: red !important;
+  :is(
+    .group.h-full.crm-opportunities-funnel,
+    .group.h-full.crm-opportunities-stages-distribution,
+    .group.h-full.crm-locations-tasks,
+    .group.h-full.crm-conversations-manual-actions,
+    .group.h-full.automations-attribution-lead-sources,
+    .group.h-full.automations-reporting-google-analytics-count-report,
+    .group.h-full.automations-reporting-google-analytics-chart-report,
+    .group.h-full.automations-reporting-gmb-report,
+    .group.h-full.automations-reporting-facebook-ads-report,
+    .group.h-full.automations-reporting-google-ads-report,
+    .crm-opportunities-conversion-rate,
+    .crm-opportunities-value,
+    .crm-opportunities-status
+  )
+  .hl-card
+  .hl-card-header {
+  border-bottom: 1px solid #333333;
 }
 
-/* ------------------------------------------------------------------- DARK-THEME-DASHBOARD HAS BEEN COMPLETED --------------------------------------------------------------------- */
+#location-dashboard .hl-wrapper-container.location-dashboard-wrapper {
+  background: #e8eaec !important;
+}
+
+/* ------------------------------------------------------------------- LIGHT-THEME-DASHBOARD HAS BEEN COMPLETED --------------------------------------------------------------------- */
