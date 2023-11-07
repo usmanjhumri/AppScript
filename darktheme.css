@@ -1,31 +1,17 @@
 :root {
-  --side-n-headback: #e8eaec;
-  --sideheadback: #111111;
-  --mobile-nav-back: #222222;
-  --text-color-light: #999999;
+  --side-n-headback: #f0f3fc;
+  --dashboard-card: #f0f3fc;
+  --quickActionst: #f0f3fc;
   --text-color-full: #ffffff !important;
   --black: #ffffff !important;
-  --white: #000000 !important;
-  --themePrimary: #1a4c81 !important;
-  --themeSecondary: #f2dcb0 !important;
+  --location-switcher-sidbar-v2-i: #000000 !important;
+  --globalSearchOpener-span: #000000 !important;
+  --n-base-selection-label: #f0f3fc !important;
   --nav-a-hover: #333333ba;
-  --transparent: transparent !important;
-  --green: #0caa0c;
-  --yellow: #ffbc00;
-  --red: #ff0000;
-  --gray: #333333;
-  --light: #333333;
-  --dark: #333333;
-  --primary-light: #4285f5;
-  --primary: #3532e7;
-  --primary-dark: #2c0bdb;
-  --white1: #333333;
-  --greyLight-1: #2b3240;
-  --greyLight-2: #1f232f;
-  --greyLight-3: #1a1f2c;
-  --greyDark: #16223a;
-  --bg-dashboard: #1a1f2c;
+  --hl_header: #f0f3fc;
+  --bg-dashboard: #f0f3fc;
   --body-bg: #1a1f2c;
+  --hl_header--controls-a: #f0f3fc !important;
 }
 
 body {
@@ -83,7 +69,7 @@ body {
 .sidebar-v2-agency #sidebar-v2 .hl_nav-header-without-footer nav a:hover {
   border-radius: 10px;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
-  background: #e8eaec !important;
+  background: #f0f3fc !important;
 }
 
 #sidebar-v2 nav a i {
@@ -146,12 +132,12 @@ a#sb_divider-1:active {
 div#globalSearchOpener,
 #quickActions {
   margin: 0px 10px 0 10px;
-  background: #e8eaec !important;
+  background: var(--quickActionst) !important;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 div#location-switcher-sidbar-v2 i {
-  background: #000000 !important;
+  background: var(--location-switcher-sidbar-v2-i) !important;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   padding: 0px 5px !important;
 }
@@ -163,7 +149,7 @@ div#location-switcher-sidbar-v2 .hl_location-text span {
   font-weight: 600;
 }
 #globalSearchOpener span {
-  color: #000000 !important;
+  color: var(--globalSearchOpener-span) !important;
 }
 #sidebar-v2 #globalSearchOpener .search-icon {
   color: black !important;
@@ -193,7 +179,7 @@ div#sidebar-v2
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 .stickyNav {
-  background: #959595 !important;
+  background: #f0f3fc !important;
   opacity: 0.9;
 }
 
@@ -227,7 +213,7 @@ div#sidebar-v2
     .crm-opportunities-status
   )
   .hl-card {
-  background: transparent !important;
+  background: var(--dashboard-card) !important;
   border: 2px dotted #333333;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
@@ -277,24 +263,28 @@ div#sidebar-v2
   letter-spacing: 1px !important;
 }
 #location-dashboard .hl-wrapper-container.location-dashboard-wrapper {
-  background: #e8eaec !important;
+  background: var(--bg-dashboard) !important;
 }
 
 #app .hl_header {
-  background: #e8eaec !important;
+  background: var(--hl_header) !important;
   box-shadow: none !important;
 }
-header.hl_header .container-fluid .hl_header--controls a#hl_header--help-icon {
-  background: #4f00a2 !important;
+header.hl_header .container-fluid .hl_header--controls a {
+  background: var(--hl_header--controls-a) !important;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+header.hl_header .container-fluid .hl_header--controls a i {
+  color: #000000 !important;
 }
 
 :is(.crm-opportunities-status, .crm-opportunities-value, )
   .echarts.chart
   path:is(:nth-child(1), :nth-child(4), :nth-child(6), :nth-child(21)) {
-  fill: #000000 !important;
+  fill: #22ccee !important;
 }
 .crm-opportunities-conversion-rate .echarts path:nth-child(4) {
-  fill: #000000 !important;
+  fill: #22ccee !important;
 }
 
 .sidebar-v2-location #sidebar-v2 .menu-title,
@@ -304,7 +294,7 @@ header.hl_header .container-fluid .hl_header--controls a#hl_header--help-icon {
 
 #location-dashboard .hl-card-header .n-base-selection-label {
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px !important;
-  background: #e8eaec !important;
+  background: var(--n-base-selection-label) !important;
 }
 .location-dashboard_header .n-input-wrapper .n-input__input .n-input__input-el {
   font-weight: 500 !important;
@@ -317,5 +307,12 @@ header.hl_header .container-fluid .hl_header--controls a#hl_header--help-icon {
 .n-base-selection-input__content {
   font-weight: 500 !important;
 }
-
+.sidebar-v2-location
+  .hl_header
+  .container-fluid
+  .hl_header--dropdown
+  a:not(.dropdown-item) {
+  background: none !important;
+  box-shadow: none !important;
+}
 /* ------------------------------------------------------------------- DARK-THEME-DASHBOARD HAS BEEN COMPLETED --------------------------------------------------------------------- */
