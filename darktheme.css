@@ -300,6 +300,14 @@ header.hl_header .container-fluid .hl_header--controls a#hl_header--help-icon {
 #sidebar-v2-location .sticky-nav {
   background: black !important;
 }
+#location-dashboard .hl-card-header .n-base-selection-label {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px !important;
+  background: #e8eaec !important;
+}
+.location-dashboard_header .n-input-wrapper .n-input__input .n-input__input-el {
+  font-weight: 500 !important;
+}
+
 /* ------------------------------------------------------------------- DARK-THEME-DASHBOARD HAS BEEN COMPLETED --------------------------------------------------------------------- */
 
 .sticky-nav {
