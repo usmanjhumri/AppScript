@@ -1,17 +1,21 @@
 :root {
   --side-n-headback: #f0f3fc;
   --dashboard-card: #f0f3fc;
-  --quickActionst: #f0f3fc;
+  --quickActionst: #67e3f9;
   --text-color-full: #ffffff !important;
   --black: #ffffff !important;
-  --location-switcher-sidbar-v2-i: #000000 !important;
+  --location-switcher-sidbar-v2-i: #67e3f9 !important;
   --globalSearchOpener-span: #000000 !important;
   --n-base-selection-label: #f0f3fc !important;
   --nav-a-hover: #333333ba;
   --hl_header: #f0f3fc;
   --bg-dashboard: #f0f3fc;
   --body-bg: #1a1f2c;
-  --hl_header--controls-a: #f0f3fc !important;
+  --hl_header--controls-a: #67e3f9 !important;
+  --switch-sidebar-bg: #67e3f9 !important;
+  --border: 0px dotted #333333 !important;
+  --box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px !important;
+  --active-hover: #67e3f9 !important;
 }
 
 body {
@@ -68,8 +72,8 @@ body {
 .sidebar-v2-location #sidebar-v2 .hl_nav-header-without-footer nav a:hover,
 .sidebar-v2-agency #sidebar-v2 .hl_nav-header-without-footer nav a:hover {
   border-radius: 10px;
-  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
-  background: #f0f3fc !important;
+  box-shadow: var(--box-shadow);
+  background: var(--active-hover) !important;
 }
 
 #sidebar-v2 nav a i {
@@ -124,8 +128,8 @@ a#sb_divider-1:active {
 }
 
 .sidebar-v2-location #sidebar-v2 #location-switcher-sidbar-v2 {
-  background: var(--transparent) !important;
-  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  background: var(--switch-sidebar-bg) !important;
+  box-shadow: var(--box-shadow);
   margin-bottom: 12px !important;
 }
 
@@ -138,8 +142,9 @@ div#globalSearchOpener,
 
 div#location-switcher-sidbar-v2 i {
   background: var(--location-switcher-sidbar-v2-i) !important;
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  box-shadow: var(--box-shadow);
   padding: 0px 5px !important;
+  color: black !important;
 }
 div#location-switcher-sidbar-v2 .hl_location_icon.scale-2 {
   filter: invert(1);
@@ -173,7 +178,7 @@ div#sidebar-v2
   .n-config-provider
   .w-vw.z-10.top-0.py-2\.5.-mx-8.bg-gray-50.sticky {
   background: transparent;
-  border: 2px dotted #333333 !important;
+  border: var(--border) !important;
   width: 100% !important;
   margin: auto !important;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
@@ -214,7 +219,7 @@ div#sidebar-v2
   )
   .hl-card {
   background: var(--dashboard-card) !important;
-  border: 2px dotted #333333;
+  border: var(--border);
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 #location-dashboard
@@ -235,7 +240,7 @@ div#sidebar-v2
   )
   .hl-card
   .hl-card-header {
-  border-bottom: 2px dotted #333333;
+  border-bottom: var(--border);
 }
 #location-dashboard
   :is(
@@ -257,7 +262,7 @@ div#sidebar-v2
   .hl-card-header
   .truncate.mr-2
   .text-gray-900.hl-text-md-medium {
-  border-bottom: 2px dotted #333333;
+  border-bottom: var(--border);
   font-weight: 700 !important;
   word-spacing: 2px !important;
   letter-spacing: 1px !important;
@@ -314,5 +319,9 @@ header.hl_header .container-fluid .hl_header--controls a i {
   a:not(.dropdown-item) {
   background: none !important;
   box-shadow: none !important;
+}
+.location-dashboard_header .flex.items-center.gap-2 {
+  box-shadow: var(--box-shadow) !important;
+  border-radius: 10px !important;
 }
 /* ------------------------------------------------------------------- DARK-THEME-DASHBOARD HAS BEEN COMPLETED --------------------------------------------------------------------- */
