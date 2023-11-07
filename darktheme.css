@@ -186,11 +186,15 @@ div#sidebar-v2
 #location-dashboard
   .n-config-provider
   .w-vw.z-10.top-0.py-2\.5.-mx-8.bg-gray-50.sticky {
-  background: transparent !important;
+  background: transparent;
   border: 2px dotted #333333 !important;
   width: 100% !important;
   margin: auto !important;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.stickyNav {
+  background: #67dbd7 !important;
+  opacity: 0.9;
 }
 
 .sidebar-v2-location #sidebar-v2 .hl_nav-header nav a.active.divider {
@@ -297,9 +301,7 @@ header.hl_header .container-fluid .hl_header--controls a#hl_header--help-icon {
 .sidebar-v2-agency #sidebar-v2 .menu-title {
   color: black !important;
 }
-#sidebar-v2-location .sticky-nav {
-  background: black !important;
-}
+
 #location-dashboard .hl-card-header .n-base-selection-label {
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px !important;
   background: #e8eaec !important;
@@ -308,9 +310,12 @@ header.hl_header .container-fluid .hl_header--controls a#hl_header--help-icon {
   font-weight: 500 !important;
 }
 
-/* ------------------------------------------------------------------- DARK-THEME-DASHBOARD HAS BEEN COMPLETED --------------------------------------------------------------------- */
-
-.sticky-nav {
-  background: black !important;
-  box-shadow: none !important;
+#location-dashboard
+  .hl-card-header
+  .n-base-selection-label
+  .n-base-selection-overlay__wrapper,
+.n-base-selection-input__content {
+  font-weight: 500 !important;
 }
+
+/* ------------------------------------------------------------------- DARK-THEME-DASHBOARD HAS BEEN COMPLETED --------------------------------------------------------------------- */

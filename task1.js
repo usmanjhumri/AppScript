@@ -135,4 +135,14 @@ window.addEventListener('routeChangeEvent',()=>{
 //   head.classList.toggle("sticky-nav", locationDashboard.scrollTop > 80);
 // });
 
+
+
+// this is second navbar change the color when i scroll //
+const locationDash = document.querySelector("#location-dashboard")
+locationDash.addEventListener("scroll", () => {
+  const stickyHeader = document.querySelector(".sticky")
+  stickyHeader.classList.toggle("stickyNav", locationDash.scrollTop > 90)
+})
+
+
 //    End this code     //
