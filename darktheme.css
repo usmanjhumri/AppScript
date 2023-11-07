@@ -1,10 +1,11 @@
 :root {
   --side-n-headback: #f0f3fc;
   --dashboard-card: #f0f3fc;
+  --header-clynder: #f0f3fc;
   --quickActionst: #67e3f9;
   --text-color-full: #ffffff !important;
   --black: #ffffff !important;
-  --location-switcher-sidbar-v2-i: #67e3f9 !important;
+  --location-switcher-sidbar-v2-i: #e8eaec !important;
   --globalSearchOpener-span: #000000 !important;
   --n-base-selection-label: #f0f3fc !important;
   --nav-a-hover: #333333ba;
@@ -320,8 +321,11 @@ header.hl_header .container-fluid .hl_header--controls a i {
   background: none !important;
   box-shadow: none !important;
 }
-.location-dashboard_header .flex.items-center.gap-2 {
+
+#location-dashboard
+  div#location-dashboard_date-picker
+  .n-input:not(.n-input--autosize) {
+  background: var(--header-clynder) !important;
   box-shadow: var(--box-shadow) !important;
-  border-radius: 10px !important;
 }
 /* ------------------------------------------------------------------- DARK-THEME-DASHBOARD HAS BEEN COMPLETED --------------------------------------------------------------------- */
