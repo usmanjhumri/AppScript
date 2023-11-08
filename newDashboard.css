@@ -1,6 +1,6 @@
 #location-dashboard
   .group.h-full.crm-opportunities-status
-  .dashboard-widget-type-custom.hl-card {
+  .dashboard-widget-type-custom {
   background-image: url("https://storage.googleapis.com/msgsndr/Q6sATpsoSLCPFf5ErtoF/media/654b6dd092b8572527986b03.png");
   background-repeat: no-repeat;
   background-position: center;
@@ -22,4 +22,12 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: 100% 100%;
+}
+:is(.crm-opportunities-status, .crm-opportunities-value, )
+  .echarts.chart
+  path:is(:nth-child(1), :nth-child(4), :nth-child(6), :nth-child(21)) {
+  fill: #000000 !important;
+}
+.crm-opportunities-conversion-rate .echarts path:nth-child(4) {
+  fill: #000000 !important;
 }
