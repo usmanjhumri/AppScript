@@ -1,20 +1,25 @@
-#location-dashboard .group.h-full.crm-opportunities-status .dashboard-widget-type-custom.hl-card{
-    background-image:url("https://storage.googleapis.com/msgsndr/Q6sATpsoSLCPFf5ErtoF/media/654b6dd092b8572527986b03.png");
-    background-repeat:no-repeat;
-    background-position:center;
-    background-size:100% 100%
-    
+#location-dashboard
+  .group.h-full.crm-opportunities-status
+  .dashboard-widget-type-custom.hl-card {
+  background-image: url("https://storage.googleapis.com/msgsndr/Q6sATpsoSLCPFf5ErtoF/media/654b6dd092b8572527986b03.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% 100%;
 }
-#location-dashboard .crm-opportunities-value .dashboard-widget-type-custom.hl-card{
-    background-image:url("https://storage.googleapis.com/msgsndr/Q6sATpsoSLCPFf5ErtoF/media/654b751392b857423d9873b8.png");
-    background-repeat:no-repeat;
-    background-position:center;
-    background-size:100% 100%
+#location-dashboard
+  .crm-opportunities-value
+  .dashboard-widget-type-custom.hl-card {
+  background-image: url("https://storage.googleapis.com/msgsndr/Q6sATpsoSLCPFf5ErtoF/media/654b751392b857423d9873b8.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% 100%;
 }
 
-#location-dashboard .crm-opportunities-conversion-rate .dashboard-widget-type-custom.hl-card{
-    background-image:url("https://storage.googleapis.com/msgsndr/Q6sATpsoSLCPFf5ErtoF/media/654b76d77b3caa119f8b9c9a.png");
-    background-repeat:no-repeat;
-    background-position:center;
-    background-size:100% 100%
+#location-dashboard
+  .crm-opportunities-conversion-rate
+  .dashboard-widget-type-custom.hl-card {
+  background-image: url("https://storage.googleapis.com/msgsndr/Q6sATpsoSLCPFf5ErtoF/media/654b76d77b3caa119f8b9c9a.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% 100%;
 }
