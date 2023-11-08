@@ -299,11 +299,15 @@ header.hl_header .container-fluid .hl_header--controls a i {
   color: #000000 !important;
 }
 header.hl_header .container-fluid .hl_header--controls a {
-  background: green !important;
+  background: #fe8896 !important;
 }
-header.hl_header .container-fluid .hl_header--controls .avatar img {
+header.hl_header .container-fluid .hl_header--controls .hl_header--dropdown a {
   background: none !important;
 }
 #location-dashboard .n-config-provider i {
   color: black !important;
+}
+
+div#location-dashboard .hl-wrapper-container {
+  background: #caf3ff !important;
 }
