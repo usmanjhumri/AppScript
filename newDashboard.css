@@ -6,20 +6,26 @@
   --navbackground: rgb(164 181 224);
   --bodyback: linear-gradient(to right, #ece9e6, #ffffff) !important;
   --side-n-headback: linear-gradient(
-    to right,
-    #d4d1d1,
-    #dbdbdb,
-    #eaeaea
+    to bottom,
+    #ff9a67,
+    #f68295 99%
+  ) !important;
+  --side-nav-headback: linear-gradient(
+    to left,
+    #ffb996,
+    #fe8496 99%
   ) !important;
   --black: black !important;
-  --white: black !important;
+  --white: #ffffff !important;
   --themePrimary: #0f335c;
   --themeSecondary: #fff4e4;
   --nav-a-hover: #e2e2e1;
   --transparent: transparent;
-  --green: #37ca37;
-  --yellow: #ffbc00;
-  --red: red;
+  --hl-card-header: linear-gradient(
+    55deg,
+    hsl(174, 54%, 62%),
+    hsl(344, 99%, 72%)
+  ) !important;
   --bg-dashboard-one: #6cc9ce !important;
   --bg-dashboard-two: #fe6d65 !important;
   --bg-dashboard-three: #ffd04e !important;
@@ -40,15 +46,18 @@ body {
   font-family: "Aldrich", sans-serif !important;
 }
 
-#sidebar-v2 {
+div#sidebar-v2 {
   background: var(--side-n-headback) !important;
-
   box-shadow: 5px 5px 15px #bebebe, 0px 0px 0px #ffffff;
 }
 
+div#sidebar-v2 nav {
+  background: var(--side-nav-headback) !important;
+  border-radius: 20px;
+}
 span.search-placeholder,
 span.search-shortcut {
-  color: white !important;
+  color: black !important;
 }
 
 span.search-shortcut {
@@ -56,7 +65,7 @@ span.search-shortcut {
 }
 
 #globalSearchOpener svg {
-  fill: white !important;
+  fill: black !important;
 }
 
 .sidebar-v2-agency #sidebar-v2 .hl_nav-header nav a.active,
@@ -133,20 +142,21 @@ span.search-shortcut {
 .sidebar-v2-location #sidebar-v2 #location-switcher-sidbar-v2 {
   background: var(--transparent) !important;
   box-shadow: inset -4px -5px 10px var(--white) 70, inset 4px 2px 5px #aeaec020;
-  margin-bottom: 0px !important;
+  margin-bottom: 15px !important;
+  border: 1px solid hsla(0, 0%, 100%, 0.11);
 }
 #location-switcher-sidbar-v2 svg {
   color: #ffffff !important;
   filter: invert(0) !important;
 }
 #location-switcher-sidbar-v2 .hl_location-text span {
-  color: #ffffff !important;
+  color: var(--black) !important;
 }
 div#app .sidebar-v2-agency div#sidebar-v2 nav img {
-  filter: invert(0) !important;
+  filter: invert(1) !important;
 }
 div#app .sidebar-v2-location div#sidebar-v2 nav img {
-  filter: invert(0) !important;
+  filter: invert(1) !important;
 }
 div#globalSearchOpener,
 #quickActions {
@@ -164,45 +174,30 @@ a.btn.btn-primary.btn-sched {
   margin-top: 20px !important;
 }
 
-div#sidebar-v2 {
-  background: #293541 !important;
-}
-
 [class*="hl_nav"] a.active {
   background: #f44336 !important;
 }
 
 .sidebar-v2-location .switcher-caret-holder i {
-  color: white !important;
+  color: var(--black) !important;
 }
 
 .sidebar-v2-agency .switcher-caret-holder i {
-  color: black !important;
+  color: var(--black) !important;
 }
 
 .sidebar-v2-location #sidebar-v2 #backButtonv2 {
   background: #fe6c64 !important;
-  color: black !important;
+  color: var(--black) !important;
 }
 
 .sidebar-v2-agency #sidebar-v2 #backButtonv2 {
   background: #fe6c64 !important;
-  color: black !important;
-}
-
-.sidebar-v2-agency #sidebar-v2 #location-switcher-sidbar-v2 {
-  background: #f7f5f4;
+  color: var(--black) !important;
 }
 
 .sidebar-v2-agency #sidebar-v2 .hl_nav-header-without-footer nav a.active {
   margin-top: 10px !important;
-}
-
-.sidebar-v2-location
-  #sidebar-v2
-  #location-switcher-sidbar-v2
-  .hl_v2-location_switcher {
-  background: #ffffff !important;
 }
 
 .sidebar-v2-agency #sidebar-v2 #location-switcher-sidbar-v2 .hl_text-overflow {
@@ -226,17 +221,24 @@ div#sidebar-v2 {
 }
 
 #app #sidebar-v2 nav i {
-  color: #ffffff !important;
+  color: #000000 !important;
 }
 #app #sidebar-v2 nav a span {
-  color: #ffffff !important;
+  color: #000000 !important;
+  font-weight: 500;
 }
 #sidebar-v2
   .flex.flex-col.text-left.text-lg.menu-title.px-2.py-2.md\:px-3.md\:py-2.mt-2.font-medium {
-  color: #ffffff !important;
+  color: #000000 !important;
 }
 #app div#mobileresphambeg {
   display: none !important;
+}
+
+.sidebar-v2-location #sidebar-v2 .hl_nav-header,
+.sidebar-v2-location #sidebar-v2 .hl_nav-settings {
+  overflow-y: overlay;
+  max-height: calc(100vh - 13rem);
 }
 /* end sidebar styling */
 
@@ -269,42 +271,39 @@ div#sidebar-v2 {
 :is(.crm-opportunities-status, .crm-opportunities-value, )
   .echarts.chart
   path:is(:nth-child(1), :nth-child(4), :nth-child(6), :nth-child(21)) {
-  fill: #000000 !important;
+  fill: #fb4a7c !important;
 }
 .crm-opportunities-conversion-rate .echarts path:nth-child(4) {
-  fill: #000000 !important;
+  fill: #fb4a7c !important;
 }
 
-#bookedAppointments__::-webkit-scrollbar {
-  width: 4px;
+/* other cards styling  */
+#location-dashboard
+  :is(
+    .group.h-full.crm-opportunities-funnel,
+    .group.h-full.crm-opportunities-stages-distribution,
+    .group.h-full.crm-locations-tasks,
+    .group.h-full.crm-conversations-manual-actions,
+    .group.h-full.automations-attribution-lead-sources,
+    .group.h-full.automations-reporting-google-analytics-count-report,
+    .group.h-full.automations-reporting-google-analytics-chart-report,
+    .group.h-full.automations-reporting-gmb-report,
+    .group.h-full.automations-reporting-facebook-ads-report,
+    .group.h-full.automations-reporting-google-ads-report
+  )
+  .hl-card-header {
+  background: var(--hl-card-header) !important;
 }
 
-#bookedAppointments__::-webkit-scrollbar-track {
-  background: #f1f1f1;
+header.hl_header .container-fluid .hl_header--controls a i {
+  color: #000000 !important;
 }
-
-#bookedAppointments__::-webkit-scrollbar-thumb {
-  background: #888;
-  border-radius: 50px;
+header.hl_header .container-fluid .hl_header--controls a {
+  background: green !important;
 }
-
-::-webkit-scrollbar {
-  width: 4px;
+header.hl_header .container-fluid .hl_header--controls .avatar img {
+  background: none !important;
 }
-
-::-webkit-scrollbar-track {
-  background: #f1f1f1;
-}
-
-::-webkit-scrollbar-thumb {
-  background: #888;
-  border-radius: 50px;
-}
-
-::-webkit-scrollbar-thumb:hover {
-  background: #555;
-}
-
-#bookedAppointments__::-webkit-scrollbar-thumb:hover {
-  background: #555;
+#location-dashboard .n-config-provider i {
+  color: black !important;
 }
