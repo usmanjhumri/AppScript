@@ -8,11 +8,7 @@
     #dbdbdb,
     #eaeaea
   ) !important;
-  --black: black !important;
-  --white: black !important;
-  --themePrimary: #0f335c;
-  --themeSecondary: #fff4e4;
-  --nav-a-hover: #e2e2e1;
+  --bg-dashboard: #2adeff !important;
   --transparent: transparent;
   --green: #37ca37;
   --yellow: #ffbc00;
@@ -311,13 +307,25 @@ div#app div#sidebar-v2 nav.flex-1.w-full img {
 }
 
 .n-input.n-input--resizable.n-input--pair.n-input--stateful {
-  background:var(--bg-dashboard) !important;
+  background: var(--bg-dashboard) !important;
   /* box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23); */
   box-shadow: 0 2px 3px rgba(0, 0, 0, 0.11) !important;
-  
+  border: none !important;
+}
+.sidebar-v2-location #sidebar-v2 .hl_collapse-button {
+  background: black !important;
+  color: #4acf80 !important;
+}
+.hl_header--controls a {
+  background: #4acf80 !important;
+}
+.hl_header--controls a i {
+  color: black !important;
+}
+.hl_header--dropdown.dropdown a {
+  background: none !important;
+}
+#sidebar-v2 #quickActions {
+  border: 1px solid black !important;
 }
 /* ------------------------------------------------------------------- D2-DASHBOARD HAS BEEN COMPLETED --------------------------------------------------------------------- */
-
-
-
-
