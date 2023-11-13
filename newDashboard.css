@@ -5,17 +5,19 @@
 :root {
   --navbackground: rgb(164 181 224);
   --bodyback: linear-gradient(to right, #ece9e6, #ffffff) !important;
-  --side-n-headback: linear-gradient(
-    to bottom,
-    #ff9a67,
-    #f68295 99%
-  ) !important;
+  --side-n-headback: #caf3ff !important;
   --side-nav-headback: linear-gradient(
     to left,
     #ffb996,
-    #fe8496 99%
+    #fe849685 99%
   ) !important;
   --black: black !important;
+  --switcher-bg: linear-gradient(to left, #ffb996, #fe849685 99%) !important;
+  --globalSearchOpener-bg: linear-gradient(
+    to left,
+    #ffb996,
+    #fe849685 99%
+  ) !important;
   --white: #ffffff !important;
   --themePrimary: #0f335c;
   --themeSecondary: #fff4e4;
@@ -26,12 +28,6 @@
     hsl(174, 54%, 62%),
     hsl(344, 99%, 72%)
   ) !important;
-  --bg-dashboard-one: #6cc9ce !important;
-  --bg-dashboard-two: #fe6d65 !important;
-  --bg-dashboard-three: #ffd04e !important;
-  --bg-dashboard-one-card: #e4e4e4 !important;
-  --bg-dashboard-two-card: #cccbd0 !important;
-  --bg-dashboard-three-card: #cdc3e1 !important;
 }
 
 * {
@@ -47,8 +43,13 @@ body {
 }
 
 div#sidebar-v2 {
-  background: var(--side-n-headback) !important;
+  /* background:  var(--side-n-headback) !important; */
   box-shadow: 5px 5px 15px #bebebe, 0px 0px 0px #ffffff;
+  background: #caf3ff !important;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
 }
 
 div#sidebar-v2 nav {
@@ -140,14 +141,13 @@ span.search-shortcut {
 }
 
 .sidebar-v2-location #sidebar-v2 #location-switcher-sidbar-v2 {
-  background: var(--transparent) !important;
+  background: var(--switcher-bg) !important;
   box-shadow: inset -4px -5px 10px var(--white) 70, inset 4px 2px 5px #aeaec020;
   margin-bottom: 15px !important;
   border: 1px solid hsla(0, 0%, 100%, 0.11);
 }
 #location-switcher-sidbar-v2 svg {
-  color: #ffffff !important;
-  filter: invert(0) !important;
+  filter: invert(1) !important;
 }
 #location-switcher-sidbar-v2 .hl_location-text span {
   color: var(--black) !important;
@@ -160,10 +160,13 @@ div#app .sidebar-v2-location div#sidebar-v2 nav img {
 }
 div#globalSearchOpener,
 #quickActions {
-  background: var(--transparent) !important;
+  background: var(--globalSearchOpener-bg) !important;
 
   margin: 0px 10px 0 10px;
   box-shadow: inset -4px -5px 10px var(--white) 70, inset 4px 2px 5px #aeaec020;
+}
+#quickActions img {
+  filter: invert(1) !important;
 }
 
 a.btn.btn-primary.btn-sched {
@@ -242,6 +245,18 @@ a.btn.btn-primary.btn-sched {
 }
 /* end sidebar styling */
 
+/* header code  */
+
+#location-dashboard .sticky {
+  background: #caf3ff !important;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.11) !important;
+}
+.hl_header .container-fluid {
+  background: #caf3ff !important;
+}
+
+/* End header code  */
+
 /* this is dashboard styling */
 #location-dashboard
   .group.h-full.crm-opportunities-status
@@ -310,4 +325,9 @@ header.hl_header .container-fluid .hl_header--controls .hl_header--dropdown a {
 
 div#location-dashboard .hl-wrapper-container {
   background: #caf3ff !important;
+}
+
+.n-input.n-input--resizable.n-input--pair.n-input--stateful {
+  background: #caf3ff !important;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.11) !important;
 }
