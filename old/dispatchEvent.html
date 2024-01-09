@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Range Input Example</title>
+    <link rel="stylesheet" href="secondTask.css" />
+  </head>
+  <body>
+    <!-- <div id="next-btn-dev-nextSlide">
+      <but id="pre-btn" onclick="moveSlide('back')">Previous</but>
+      <button id="next-btn" type="button">Next</button>
+    </div> -->
+    <canvas id="torchChart" width="400" height="400"></canvas>
+    <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100">
+      <rect width="100%" height="100%" fill="#FF0000" />
+      <image href="https://storage.googleapis.com/highlevel-backend.appspot.com/sidebar-v2/icon_launchpad.svg" x="10" y="10" width="80" height="80" />
+  </svg>
+  
+
+    <script>
+
+
+// this code is used for Form Survey
+//   const attributeColors = {
+//   'folder_1': 'green',
+//   'folder_2': 'blue',
+//   'folder_3': 'yellow',
+//   'folder_4': 'red',
+  
+// };
+
+// const groupedElements = {};
+
+// for (const prefix in attributeColors) {
+//   const elements = document.querySelectorAll(`input[data-q^="${prefix}"]`);
+//   console.log(elements, ' elements');
+//   groupedElements[prefix] = elements;
+// }
+// console.log(groupedElements, ' groupedElements');
+
+// for (const prefix in groupedElements) {
+//   const elements = groupedElements[prefix];
+
+//   console.log(elements, ' grouped');
+
+//   if (elements.length > 0) {
+//     const newDiv = document.createElement('div');
+//     newDiv.className = 'add-about fields-container row';
+//     newDiv.style.backgroundColor = attributeColors[prefix]; 
+
+//     elements.forEach(item => {
+//       const parentMenuFieldContainer = item.closest('.menu-field-wrap');
+//       if (parentMenuFieldContainer) {
+//         newDiv.appendChild(parentMenuFieldContainer);
+//       }
+//     });
+
+//     const targetContainer = document.querySelector('#_builder-form .fields-container');
+//     targetContainer.appendChild(newDiv);
+//   }
+// }
+
+
+//       now I'm doing same functionality using chunks
+// function myFn(params, chunks) {
+//     const res = []
+//     while (myArray.length) {
+//         res.push(myArray.slice(0,chunks))
+//         myArray = myArray.slice(chunks)
+//     }
+//     return res;
+// }
+// let myArray = [1,2,3,4,5,6,7,8,9,0]
+// console.log(myFn(myArray, 5))
+
+
+
+
+
+
+
+
+
+const ctx = document.getElementById('torchChart').getContext('2d');
+
+// Define a radial gradient for the torch flame
+const gradient = ctx.createRadialGradient(200, 200, 0, 200, 200, 100);
+gradient.addColorStop(0, 'rgba(255, 165, 0, 1)'); // Outer flame color
+gradient.addColorStop(1, 'rgba(255, 69, 0, 0)');  // Transparent color
+
+// Draw the torch background
+ctx.fillStyle = 'rgba(0, 0, 0, 0.8)';
+ctx.beginPath();
+ctx.arc(200, 200, 100, 0, 2 * Math.PI);
+ctx.fill();
+
+// Draw the torch flame
+ctx.fillStyle = gradient;
+ctx.beginPath();
+ctx.arc(200, 200, 100, 0, 2 * Math.PI);
+ctx.fill();
+
+// Draw a handle or any additional details as needed
+
+// You can also add labels or legends if necessary
+
+    </script>
+  </body>
+</html>

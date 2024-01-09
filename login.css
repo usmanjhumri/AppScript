@@ -1,0 +1,80 @@
+.hl_header--controls > a {
+    background: var(--secondry-color) !important;
+  }
+  .hl_header--controls > a i {
+    filter: invert(0) !important;
+  }
+  .hl_header--controls
+    span.btn.btn-circle.d-flex.justify-content-center.align-items-center.btn-green-dark {
+    background: var(--secondry-color) !important;
+  }
+  #mobileresphambeg img {
+    display: none !important;
+  }
+  /* -------end right icon three colors------ */
+  #app:has(.hl_login) {
+    background: url(https://storage.googleapis.com/msgsndr/Q6sATpsoSLCPFf5ErtoF/media/657748fe86a34d69ad6885cf.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  .hl_login--body {
+    position: absolute;
+    /* right: -72%; */
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+  }
+  
+  .login-card-heading::before {
+    content: " ";
+    background: url(https://storage.googleapis.com/msgsndr/ChfFROYg7IbYg34tpXxB/media/6347028c31b6e09874b111b2.png);
+    position: absolute;
+    top: 0px;
+    /* left: 50%; */
+    height: 100px;
+    width: 100px;
+    background-size: cover;
+    transform: translateX(-50%);
+  }
+  .login-card-heading {
+    margin-top: 60px;
+  }
+  .hl_login--header {
+    display: none;
+  }
+  .card:has(.login-card-heading) {
+    background:  #58bf92;
+    /* margin-left: -15px !important; */
+    border-radius: 0px;
+    /* height: 100vh; */
+  }
+  .card:has(.login-card-heading) .card-body {
+    margin-top: 12%;
+    position: relative;
+  }
+  
+  button.hl-btn.justify-center.w-full.inline-flex.items-center.px-4.py-2.border.border-transparent.text-sm.font-medium.rounded.text-white.bg-curious-blue-500.hover\:bg-curious-blue-600.focus\:outline-none.focus\:ring-2.focus\:ring-offset-2.focus\:ring-curious-blue-600 {
+    background: #f06f90 !important;
+    color:black !important;
+  }
+  
+  a#forgot_passowrd_btn {
+    color: black !important;
+  }
+  
+  h2.heading2 {
+    color: black;
+  }
+  
+  span.hl-text-input-label.block.text-sm.font-medium.text-gray-700.mb-1 {
+    color: black;
+  }
+  
+  p.foot-note {
+    color: black;
+  }
+  
+  a.text-curious-blue-500.hover\:text-curious-blue-800.font-semibold {
+    color: black;
+  }
