@@ -1,0 +1,44 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+#next-btn-dev{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 1rem 0px;
+}
+
+
+
+
+
+#next-btn{
+    background: #001346;
+    padding: 0.8rem 6rem;
+    border-radius: 4px;
+    font-weight: 400;
+    text-align: center;
+    color: aliceblue;
+    border: none;
+    cursor: pointer;
+
+}
+#next-btn-dev-nextSlide{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin: 1rem 0px;
+}
+#pre-btn{
+    background: #001346;
+    padding: 0.8rem 3rem;
+    border-radius: 4px;
+    font-weight: 400;
+    text-align: center;
+    color: aliceblue;
+    border: none;
+    cursor: pointer; 
+}

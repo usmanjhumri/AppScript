@@ -1,0 +1,27 @@
+
+/* silder css */
+.mainBox{
+
+width: 11.875rem;
+margin: 0px 0.625rem 0px 0px;
+border: 1px solid rgb(224, 224, 224);
+border-radius: 5px;
+
+font-family: Roboto, Arial, Helvetica, sans-serif;
+text-align: center;
+}
+div.p{
+    background-color: rgb(255, 153, 0);
+    padding: 0.2rem;
+    height: 50px;
+}
+div.p .para{
+    padding: 0.5rem;
+    text-align: center;
+    font-size: 0.75rem;
+    font-weight: 700;
+}
+.treesYear{
+    padding: 0.5rem;
+}
+/* End silder css */

@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+   
+
+    .repeater-field-warp-item {
+      margin: 20px;
+    }
+
+    .repeater-field-item {
+      overflow: hidden;
+    }
+
+    .repeater-field-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .repeater-field-header-title {
+      font-size: 14px;
+      font-weight: 400;
+    }
+
+    .repeater-field-content {
+      padding: 20px;
+    }
+
+    .form-field {
+      margin-bottom: 15px;
+    }
+
+    .elementor-field-label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+
+    .form-input,
+    .form-select {
+      width: 100%;
+      padding: 8px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      transition: border-color 0.3s ease-in-out;
+    }
+
+    .form-input:focus,
+    .form-select:focus {
+      outline: none;
+      border-color: #3498db;
+    }
+
+    .repeater-field-footer {
+      padding: 10px;
+      background-color: #f1f1f1;
+      text-align: center;
+    }
+
+    .repeater-field-button-add {
+      cursor: pointer;
+      padding: 8px 16px;
+      border: 1px solid #3498db;
+      border-radius: 4px;
+      background-color: #3498db;
+      color: #fff;
+      font-weight: bold;
+      transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+    }
+
+    .repeater-field-button-add:hover {
+      background-color: #fff;
+      color: #3498db;
+    }
+
+    .accordion {
+      background: none;
+      border-width: 0;
+      border-style: solid;
+      border-color: #e5e7eb;
+      width: 100%;
+      overflow: hidden;
+      box-sizing: border-box;
+    }
+
+    .accordion-head {
+      background: none;
+      border-radius: 2px;
+      padding: 16px 20px;
+      margin: 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .heading {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .heading h4 {
+      font-size: 16px;
+      color: #111827;
+    }
+
+    .close-icon svg {
+      width: 20px;
+      aspect-ratio: 1/1;
+      transition: all 0.3s;
+      transform: rotate(180deg);
+      cursor: pointer;
+      stroke: #6b7280;
+    }
+
+    .accordion-body-main {
+      background: none;
+      padding: 0 10px;
+      overflow: hidden;
+      transition: all 0.3s;
+      height: 0;
+    }
+
+    .accordion-items p {
+      font-size: 16px;
+      color: #6b7280;
+      padding: 2px;
+    }
+    .dependent-1 {
+      font-size: 14px;
+      font-weight: 400;
+    }
+    .inputsAlign{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .dobandSsn{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .addDependentBtn{
+      background-color: #169625;
+    border-radius: 103px 103px 103px 103px;
+    padding: 10px 20px 10px 20px;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    }
+    .addDependentBtn:hover{
+      box-shadow: 4px 4px 0 0 rgba(0,0,0,.35) !important;
+    color: #fff;
+    }
+  </style>
+  
+  
+  
+  <body>
+    <div class="accordion">
+      <!-- Accordion Header -->
+      <div class="accordion-head">
+        <div class="heading">
+          <h5 class="dependent-1">Dependent 1</h5>
+        </div>
+        <!-- Accordion Close/Open Btn -->
+        <div class="collapse-btn">
+          <span class="close-icon cursor-pointer">
+            <svg
+              viewBox="0 0 20 20"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M15 13L10 8L5 13"
+                stroke-width="1.67"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </span>
+        </div>
+      </div>
+      <!-- Accordion Body -->
+      <div class="accordion-body-main">
+        <div class="accordion-body">
+          <div class="accordion-card">
+            <div class="accordion-items">
+              <div class="repeater-field-content">
+                <div class="container-repeater-field" data-id="6037">
+                 <div class="inputsAlign">
+                  <div class="form-field elementor-col-33 firstName">
+                    <label
+                      for="form-field-dep_Fname"
+                      class="elementor-field-label"
+                    >
+                      First Name
+                    </label>
+                    <input
+                      type="text"
+                      name="form_fields[dep_Fname][6037]"
+                      id="form-field-dep_Fname-6037"
+                      class="form-input"
+                      placeholder="Enter First Name"
+                      aria-required="true"
+                    />
+                  </div>
+                  <div class="form-field elementor-col-33 lastName">
+                    <label
+                      for="form-field-dep_Lname"
+                      class="elementor-field-label"
+                    >
+                      Last Name
+                    </label>
+                    <input
+                      type="text"
+                      name="form_fields[dep_Lname][6037]"
+                      id="form-field-dep_Lname-6037"
+                      class="form-input"
+                      placeholder="Enter Last Name"
+                      aria-required="true"
+                    />
+                  </div>
+                  <div class="form-field elementor-col-33 genderName">
+                    <label
+                      for="form-field-dep_gender"
+                      class="elementor-field-label"
+                    >
+                      Gender
+                    </label>
+                    <select
+                      name="form_fields[dep_gender][6037]"
+                      id="form-field-dep_gender-6037"
+                      class="form-select"
+                      required="required"
+                      aria-required="true"
+                    >
+                      <option value="Please select Gender">
+                        Please select Gender
+                      </option>
+                      <option value="Male">Male</option>
+                      <option value="Female">Female</option>
+                    </select>
+                  </div>
+                 </div>
+
+                  <div class="dobandSsn">
+                  <div class="form-field elementor-col-50">
+                    <label
+                      for="form-field-dep_dob"
+                      class="elementor-field-label"
+                    >
+                      Date of Birth
+                    </label>
+                    <input
+                      type="text"
+                      name="form_fields[dep_dob][6037]"
+                      id="form-field-dep_dob-6037"
+                      class="form-input"
+                      placeholder="Enter MM-DD-YYYY"
+                      aria-required="true"
+                    />
+                  </div>
+                  <div class="form-field elementor-col-50">
+                    <label
+                      for="form-field-dep_relationship"
+                      class="elementor-field-label"
+                    >
+                      SSN <i style="color: #169625">(if adding to plan)</i>
+                    </label>
+                    <input
+                      type="text"
+                      name="form_fields[dep_relationship][6037]"
+                      id="form-field-dep_relationship-6037"
+                      class="form-input"
+                      placeholder="Enter SSN (Only numbers)"
+                      minlength="9"
+                      maxlength="11"
+                    />
+                  </div>
+                </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="addDependentBtn" type="button">usman</button>
+    </div>
+
+    <script>
+      let collapseBtn = document.querySelector(".close-icon");
+      let accordionBodyMain = document.querySelector(".accordion-body-main");
+      let toggleClick = true;
+
+      collapseBtn.addEventListener("click", (e) => {
+        let accordionCardHeight =
+          document.querySelector(".accordion-body").getBoundingClientRect()
+            .height + 4;
+        accordionBodyMain.style.height = toggleClick
+          ? accordionCardHeight + "px"
+          : 0;
+        e.target.style.transform = "rotate(" + toggleClick ? 0 : 180 + "deg)";
+        toggleClick = !toggleClick;
+      });
+    </script>
+
+
+
+ 
+<script>
+  const targetedFields = document.querySelectorAll(`.form-input, .form-select`); 
+       targetedFields.forEach((inputs) => { 
+         const findClosestofTexas = inputs.closest(".form-field-container"); 
+           findClosestofTexas?.classList.add("d-none"); 
+       }); 
+         
+     
+const DependentsTaxes = document.querySelectorAll(
+  'input[data-q="dependents-taxes"]'
+);
+
+DependentsTaxes.forEach((input) => {
+  input.addEventListener("change", function () {
+    const value = this.value;
+
+       const targetedFields = document.querySelectorAll(`.form-input, .form-select`); 
+       targetedFields.forEach((inputs) => { 
+         const findClosestofTexas = inputs.closest(".form-field-container"); 
+           findClosestofTexas?.classList.add("d-none"); 
+       });
+      targetedFields.forEach((inputs) => {
+        const findClosestofTexas = inputs.closest(".form-field-container");
+        
+          findClosestofTexas.classList.add("d-none");
+            if (value === "Yes") {
+            findClosestofTexas?.classList.remove("d-none");
+            
+          }
+        
+          
+      });
+      
+   
+  });
+});
+</script>
+  </body>
+</html>

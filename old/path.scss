@@ -1,0 +1,16 @@
+$colors: (
+  13: green,
+  14: blue,
+  15: red,
+  16: orange,
+  17: purple,
+  18: pink
+);
+
+.crm-opportunities-funnel #chart path {
+  @for $i from 13 through 18 {
+    &:nth-child(#{$i}) {
+      fill: map-get($colors, #{$i}) !important;
+    }
+  }
+}

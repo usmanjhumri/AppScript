@@ -1,0 +1,37 @@
+@media (max-width: 1420px) {
+  .outboard-web-app.animate {
+    flex-direction: column !important;
+  }
+  .setup-vpn-group {
+    gap: 20px !important;
+    padding: 70px var(--gutter) 50px !important;
+  }
+}
+
+@media (max-width: 636px) {
+  .welcome-first-name-lets-get-wrapper {
+    font-size: 30px !important;
+  }
+}
+
+@media (max-width: 1414px) {
+  .frame,
+  .frame-inner,
+  .frame-parent {
+    width: 100% !important;
+    --gutter: 30px;
+  }
+}
+
+.frame8 .frame-inner8 .frame-parent9 {
+  align-items: flex-start !important;
+}
+
+@media (max-width: 350px) {
+  .frame1 {
+    width: calc(100% - 36px);
+  }
+  .frame-inner1 {
+    width: calc(100% - 80px);
+  }
+}
