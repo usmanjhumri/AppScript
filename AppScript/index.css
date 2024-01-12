@@ -1,0 +1,20 @@
+.flex {
+  display: flex;
+  justify-content: space-between;
+}
+.nextandbackbtn {
+  display: flex;
+  gap: 4;
+}
+.nextbtn {
+  padding: 8px 20px;
+  background: #03b7c6;
+  border: 1px solid rgb(3, 183, 198);
+  cursor: pointer;
+}
+.savebtn {
+  padding: 8px 20px;
+  background: transparent;
+  border: 1px solid rgb(3, 183, 198);
+  cursor: pointer;
+}
