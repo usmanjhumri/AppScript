@@ -80,6 +80,80 @@ function doGet(e) {
     );
   }
 }
+
+data.first_name,
+  data.last_name,
+  data.phone,
+  data["Authorized Person (Legal Guardian)"],
+  data["Patient Signature "].url,
+  data.Relationship;
+
+data.full_name;
+
+// script for survey to get data from google sheet
+const contactId = prompt('Enter contactId:');
+
+// Check if the user canceled the prompt or entered an empty string
+if (contactId === null || contactId.trim() === '') {
+  console.log('Invalid contactId provided. Operation canceled.');
+} else {
+  const url = `https://script.google.com/macros/s/AKfycbz_4r_gUY4f0dHDm7uX_CMsTLmzvhThcv1RuWPILMYCdrAzw07435195x_P1GhAVYdVmg/exec?contact_id=${contactId}`;
+
+  fetch(url)
+    .then(response => {
+      if (!response.ok) {
+        throw new Error(`HTTP error! Status: ${response.status}`);
+      }
+      return response.json();
+    })
+    .then(data => {
+      // Extracting specific fields
+      const extractedData = {
+        
+        first_name: data.first_name,
+        last_name: data.last_name,  
+        full_name: data.full_name,
+        phone: data.phone,
+        AuthorizedPerson: data["Authorized Person (Legal Guardian)"],
+        "Authorised Person Signature": data["Authorised Person Signature"]?.url,
+        "Patient Signature": data["Patient Signature "]?.url,
+        Relationship: data.Relationship,
+        NameOfPatient: data["Name of Patient (Printed)"], 
+        ConsentSignaturePatient : data["Consent Signature Patient"].url,
+        WitnessName : data["Witness Name"],
+        WitnessSignature :  data["Witness Signature"].url,
+         PhysicianName : data["Physician Name"],
+         PatientName : data["Patient Name"],
+         Feedback :  data.Feedback,
+         JerseyWeight : data["Jersey Weight Loss Clinic Representative"],
+        // Add more fields as needed
+      };
+
+      // Log the extracted data to the console
+      console.log('Extracted Data:', extractedData);
+
+      // Assuming you want to set these values in some input fields, you can access them like this:
+      const first_name = document.getElementById('first_name'); // Replace with your actual HTML element ID
+      const last_name = document.getElementById('last_name');
+      const phone = document.getElementById('phone');
+      const authorisedPerson  document.querySelector('[data-q="authorised_person"]')
+      // Add more input elements as needed
+
+      // Set values in input fields
+      first_name.value = extractedData.first_name;
+      last_name.value = extractedData.last_name;
+      phone.value = extractedData.phone;
+        authorisedPerson.value = extractedData.AuthorizedPerson
+        
+      // Set values in more input fields as needed
+    })
+    .catch(error => {
+      console.error('Error:', error);
+    });
+}
+
+// end script for survey to get data from google sheet
+
 // doGet Function end
 
 // function doPost(e) {
