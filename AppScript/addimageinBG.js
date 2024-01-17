@@ -104,19 +104,8 @@ function fetchDataAndSetFields(contactId) {
       console.error("Fetch Error:", error);
     });
 }
-document.addEventListener("click", function (event) {
-  const clearButton = event.target;
-  if (clearButton.classList.contains("clear-button")) {
-    const signatureContainer = clearButton.previousElementSibling;
-    if (signatureContainer) {
-      const signatureBtn =
-        signatureContainer.querySelector(".signature-button");
-      if (signatureBtn) {
-        signatureBtn.style.backgroundImage = "none";
-      }
-    }
-  }
-});
+
+// Usage example: Call this function when the GHL survey page loads
 const contactId = new URLSearchParams(location.search).get("contact_id");
 if (contactId) {
   fetchDataAndSetFields(contactId);
