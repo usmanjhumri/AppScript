@@ -18,7 +18,7 @@ function getInput(selector, multiple = false, regex = "*") {
       .map((label) => {
         const elm = Array.from(
           label
-            .closest(".form-field-container")
+            .closest(".form-builder--item")
             ?.querySelectorAll("canvas,input")
         );
         return multiple ? elm : elm[0];
@@ -44,7 +44,7 @@ function fetchDataAndSetFields(contactId) {
         try {
           const filteredElements = getInput(item);
           if (!filteredElements) {
-            return console.log("get error: ", item);
+            return console.log("get error:", item);
           }
 
           const type = filteredElements.type;
