@@ -117,6 +117,9 @@ export default class ZaibaAddToCartPlugin extends AddToCartPlugin {
           }
         }
       } else {
+        // var cart = jqueryNew('.header-cart');
+        // var imgtodrag = jqueryNew(this.el).closest('.product-box').find('.product-image').eq(0);
+
         if (imgtodrag.length) {
           var imgclone = imgtodrag
             .clone()
