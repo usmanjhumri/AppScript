@@ -13,9 +13,12 @@ const handelSubmitBtn = (e) => {
   let confirm_password = document.contactForm.confirm_password.value;
 
   let emailRegex = /[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}/g;
+
   let passwordRegex =
     /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[#$^+=!*()@%&]).{8,}$/g;
+
   let namrRegex = /^[a-zA-Z\s]+$/;
+
   let phoneRegex = /^\+?[0-9\s()-]{6,20}$/gm;
 
   if (first_name == "") {
